@@ -1,57 +1,52 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="author" content="智能社 - zhinengshe.com" />
-    <meta name="copyright" content="智能社 - zhinengshe.com" />
-    <title>智能社 - www.zhinengshe.com</title>
-    <style>
-        *{margin:0;padding:0;}
-        html{overflow:hidden;}
-        #div1{position:absolute;left:0;top:0;width:100px; height:100px; background:red;}
-        .box{ position:absolute;left:0;top:0;width:2px; height:2px; background:red;}
-    </style>
-    <script>
-        window.onload = function(){
-            var oDiv = document.getElementById("div1");
-
-            var speedX = 0;
-            var speedY = 0;
-            var lastX = 0;
-            var lastY = 0;
-
-            oDiv.onmousedown = function(ev){
-                var oEvent = ev || event;
-                var disX = oEvent.clientX - oDiv.offsetLeft;
-                var disY = oEvent.clientY - oDiv.offsetTop;
-                document.onmousemove = function(ev){
-                    var oEvent = ev || event;
-                    var l = oEvent.clientX - disX;
-                    var t = oEvent.clientY - disY;
-                    oDiv.style.left = l + "px";
-                    oDiv.style.top  = t + "px";
-
-                    var oBox = document.createElement("div");
-                    oBox.className = "box";
-                    oBox.style.left = l + "px";
-                    oBox.style.top  = t + "px";
-                    document.body.appendChild(oBox);
-                };
-                document.onmouseup = function(){
-                    document.onmousemove = null;
-                    document.onmouseup = null;
-                    oDiv.releaseCapture && oDiv.releaseCapture();
-                };
-                oDiv.setCapture && oDiv.setCapture();
-                return false;
-            };
-
-
-        };
-    </script>
+	<meta charset="UTF-8">
+	<title></title>
+	<link type="text/css" rel="stylesheet" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery_slide.js"></script>
 </head>
-
 <body>
-<div id="div1"></div>
+	<div style="height:40px;"></div>
+	<div class="container_image">
+		<a href="javascript:void(0)" tip="0" class="i_btn prev_L"></a>
+		<a href="javascript:void(0)" tip="1" class="i_btn next_R"></a>
+		<ul class="slide_img">
+			<li class="on">
+				<a href="javascript:void(0);"><img src="images/za8_img.jpg" /></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)"><img src="images/za4_img.jpg" /></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)"><img src="images/za3_img.jpg" /></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)"><img src="images/za1_img.jpg" /></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)"><img src="images/za2_img.jpg" /></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)"><img src="images/za6_img.jpg" /></a>
+			</li>
+			<li>
+				<a href="javascript:void(0)"><img src="images/za7_img.jpg" /></a>
+			</li>
+		</ul>
+	</div>
+
+	<script type="text/javascript">
+	$(function(){
+
+		var newopt={
+			w2:"180",//小图宽度
+			h2:"490"//小图高度 
+		};
+		i_slide($(".container_image"),newopt);
+	});
+	</script>
 </body>
 </html>
