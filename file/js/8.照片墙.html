@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能社--http://www.zhinengshe.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:#00AA88;
+        }
+        #ul1{
+            width: 516px;
+            margin: 100px auto;
+        }
+        #ul1 li{
+            width: 150px;
+            height: 150px;
+            border: 1px solid #f1afc1;
+            float: left;
+            margin: 10px;
+            list-style: none;
+        }
+        #ul1 li.active{
+            border: 5px dashed #f18fa8;
+        }
+        #ul1 li img{
+            width: 100%;
+        }
+        #btn1{
+            width:100px;
+            height:40px;
+            background:#fff;
+            font-size:18px;
+            outline:none;
+            border:none;
+            color:#0aa770;
+            position:absolute;
+            left:50%;
+            margin-left:-50px;
+            margin-top:-50px;
+            border-radius:20%;
+        }
+    </style>
+    <script src="jquery-1.7.2.js"></script>
+    <script>
+        $(function(){
+            var oUl=$('#ul1');
+            var oLi=oUl.children();
+            var oBtn=$('#btn1');
+
+            oBtn.click(function(){
+                aPos.sort(function(){
+                    return Math.random()-0.5;
+                });
+                for(var i=0;i<oLi.length;i++){
+                    oLi.eq(i).stop().animate(aPos[oLi.eq(i).attr('data-index')]);
+                }
+            });
+            //布局转换
+            var aPos=[];
+            var zIndex=999;
+            for(var i=0;i<oLi.length;i++){
+                aPos[i]={
+                    left:oLi.eq(i).offset().left,
+                    top:oLi.eq(i).offset().top
+                }
+            }
+            for(var i=0;i<oLi.length;i++){
+                oLi.eq(i).css({
+                    'position':'absolute',
+                    'left':aPos[i].left,
+                    'top':aPos[i].top,
+                    'margin':0
+                })
+            }
+            for(var i=0;i<oLi.length;i++){
+                drag(oLi.eq(i));
+                oLi.eq(i).attr('data-index',i);
+            }
+            function drag(obj){
+                obj.mousedown(function(ev){
+                    var disX=ev.clientX-obj.offset().left;
+                    var disY=ev.clientY-obj.offset().top;
+                    function dragMove(ev){
+                        var l=ev.clientX-disX;
+                        var t=ev.clientY-disY;
+                        obj.css({'left':l,'top':t});
+                        oLi.removeClass('active');
+                        var oNear=findNearest(obj);
+                        if(oNear){
+                            oNear.addClass('active');
+                        }
+                    }
+                    function dragUp(){
+                        $(document).unbind('mousemove',dragMove);
+                        $(document).unbind('mouseup',dragUp);
+                        var oNear=findNearest(obj);
+                        if(oNear){
+                            obj.stop().animate(aPos[oNear.attr('data-index')]);
+                            oNear.stop().animate(aPos[obj.attr('data-index')]);
+                            oNear.removeClass('active');
+
+                            var tmp;
+                            tmp=oNear.attr('data-index');
+                            oNear.attr('data-index', obj.attr('data-index'));
+                            obj.attr('data-index', tmp);
+                        }else{
+                            obj.stop().animate(aPos[obj.attr('data-index')]);
+                        }
+                    }
+                    $(document).bind('mousemove',dragMove);
+                    $(document).bind('mouseup',dragUp);
+                    return false;
+                })
+            }
+            function collTest(obj,obj2){
+                var l1=obj.offset().left;
+                var r1=obj.outerWidth()+l1;
+                var t1=obj.offset().top;
+                var b1=obj.outerHeight()+t1;
+
+                var l2=obj2.offset().left;
+                var r2=obj2.outerWidth()+l2;
+                var t2=obj2.offset().top;
+                var b2=obj2.outerHeight()+t2;
+
+                if(r1<l2||l1>r2||b1<t2||t1>b2){
+                    return false;
+                }else{
+                    return true;
+                }
+            }
+            function getDis(obj,obj2){
+                var l1=obj.offset().left+obj.outerWidth()/2;
+                var l2=obj2.offset().left+obj2.outerWidth()/2;
+                var t1=obj.offset().top+obj.outerHeight()/2;
+                var t2=obj2.offset().top+obj2.outerHeight()/2;
+
+                var a=l1-l2;
+                var b=t1-t2;
+
+                return Math.sqrt(a*a+b*b);
+            }
+            function findNearest(obj){
+                var min=999999;
+                var iMinIndex=-1;
+                for(var i=0;i<oLi.length;i++){
+                    if(i==obj.index())continue;
+                    if(collTest(obj,oLi.eq(i))){
+                        var dis=getDis(obj,oLi.eq(i));
+                        if(dis<min){
+                            min=dis;
+                            iMinIndex=i;
+                        }
+                    }
+
+                }
+                if(iMinIndex==-1){
+                    return null;
+                }else{
+                    return oLi.eq(iMinIndex);
+                }
+            }
+        });
+
+    </script>
+</head>
+<body>
+    <input type="button" value="随机换位置" id="btn1">
+    <ul id="ul1">
+        <li><img src="img/01.jpg"></li>
+        <li><img src="img/02.jpg"></li>
+        <li><img src="img/03.jpg"></li>
+        <li><img src="img/04.jpg"></li>
+        <li><img src="img/05.jpg"></li>
+        <li><img src="img/06.jpg"></li>
+        <li><img src="img/07.jpg"></li>
+        <li><img src="img/08.jpg"></li>
+        <li><img src="img/09.jpg"></li>
+    </ul>
+</body>
+</html>

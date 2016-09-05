@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width:50px;
+            height:50px;
+            background:#00AA88;
+            border-radius:50%;
+            position:absolute;
+            left:100px;
+            top:150px;
+        }
+    </style>
+    <script src="jquery-1.7.2.js"></script>
+    <script>
+        $(function(){
+            var oDiv=$('#div1');
+            var iNow=1;
+            var arr=[
+                {left:100,top:150},
+                {left:300,top:150},
+                {left:150,top:250},
+                {left:200,top:50},
+                {left:250,top:250}
+            ];
+            function next(){
+                oDiv.animate(arr[iNow%5],{duration:1000,complete:function(){
+                    iNow++;
+                    next();
+                }})
+            }
+            next();
+        })
+    </script>
+</head>
+<body>
+    <div id="div1"></div>
+</body>
+</html>

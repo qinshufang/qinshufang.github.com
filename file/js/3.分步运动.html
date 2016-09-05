@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background: #92d3b9;
+            font:bold 30px/44px 'Microsoft Yahei';
+            color: #000000;
+            text-indent:2em;
+        }
+        span{
+            opacity:0;
+        }
+    </style>
+    <script src="jquery-1.7.2.js"></script>
+    <script>
+        $(function(){
+            var str='前端开发工程师是Web前端开发工程师的简称，是近五年才真正开始受到重视的一个新兴职业。Web前端开发技术是一个先易后难的过程，主要包括三个要素:HTML(标准通用标记语言下的一个应用)、级联样式表和JavaScript，这就要求前端开发工程师不仅要掌握基本的Web前端开发技术，网站性能优化、SEO和服务器端的基础知识，而且要学会运用各种工具进行辅助开发以及理论层面的知识，包括代码的可维护性、组件的易用性、分层语义模板和浏览器分级支持等。前端开发工程师是一个很新的职业，在国内乃至国际上真正开始受到重视的时间是从2005年开始的，是指Web前端开发工程师的简称。 Web前端开发是从美工演变而来的，名称上有很明显的时代特征。在互联网的演化进程中，Web 1.0时代，网站的主要内容都是静态的，用户使用网站的行为也以浏览为主。2005年以后，互联网进入Web 2.0时代，各种类似桌面软件的Web应用大量涌现，网站的前端由此发生了翻天覆地的变化。网页不再只是承载单一的文字和图片，各种富媒体让网页的内容更加生动，网页上软件化的交互形式为用户提供了更好的使用体验，这些都是基于前端技术实现的。';
+            var timer;
+            var n=0;
+            for(var i=0;i<str.length;i++){
+                $('<span></span>').html(str.charAt(i)).appendTo($('body'));
+            }
+            timer=setInterval(function(){
+                $('span').eq(n).animate({opacity:1});
+                n++;
+                if(n==str.length){
+                    clearInterval(timer);
+                }
+            },30);
+        })
+    </script>
+</head>
+<body>
+
+</body>
+</html>

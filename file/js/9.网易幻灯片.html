@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能社--http://www.zhinengshe.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background:#000;
+        }
+        #box{
+            width: 500px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+        #box ul{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        #box ul li{
+            width: 500px;
+            height: 300px;
+            font-size: 100px;
+            color: #fff;
+            text-align: center;
+            line-height: 300px;
+            float: left;
+        }
+        #box ol{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+        #box ol li{
+            width: 80px;
+            margin: 10px;
+            height: 20px;
+            background: #f2f2f2;
+            float: left;
+            position: relative;
+        }
+        #box ol li span{
+            width: 0;
+            height: 20px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #e74c3c;
+        }
+    </style>
+    <script src="jquery-1.7.2.js"></script>
+    <script>
+        $(function(){
+            var oUl=$('#ul1');
+            var aBanner=oUl.children();
+            var aBtn=$('span');
+
+            oUl.css('width',aBanner.eq(0).outerWidth()*aBanner.length+'px');
+            var iNow=0;
+            function next(){
+                aBtn.eq(iNow%aBanner.length).animate({width:80},{duration:800,complete:function(){
+                    oUl.animate({left:-aBanner.eq(0).outerWidth()*((iNow+1)%aBanner.length)},{duration:800,complete:function(){
+                        iNow++;
+                        aBtn.css('width',0);
+                        next();
+                    }})
+                }})
+            }
+            next();
+        });
+    </script>
+</head>
+<body>
+    <div id="box">
+        <ul id="ul1">
+            <li style="background: #35d358;">1</li>
+            <li style="background: #3498db;">2</li>
+            <li style="background: #ff57ca;">3</li>
+            <li style="background: #61d357;">4</li>
+            <li style="background: #f1e261;">5</li>
+        </ul>
+        <ol>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+            <li><span></span></li>
+        </ol>
+    </div>
+</body>
+</html>

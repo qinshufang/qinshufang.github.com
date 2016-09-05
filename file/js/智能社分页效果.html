@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qsf</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;;
+        }
+        #ul1{ width: 666px; margin: 0 auto; }
+        #ul1 li{ width:200px; height: 200px; background: #6699ff; margin: 10px; border: 1px solid #000; float: left;}
+    </style>
+    <script src="move1.0.js"></script>
+    <script>
+        window.onload = function (){
+        var oUl=document.getElementById('ul1');
+        var aLi=oUl.children;
+        var oBtn=document.getElementById('btn1');
+
+            // 布局转换
+            var aPos=[];
+            // 存
+            for(var i=0; i<aLi.length; i++){
+                aPos[i]={
+                    left: aLi[i].offsetLeft,
+                    top: aLi[i].offsetTop
+                };
+            }
+            // 用
+            for(var i=0; i<aLi.length; i++){
+                aLi[i].style.position='absolute';
+                aLi[i].style.left=aPos[i].left+'px';
+                aLi[i].style.top=aPos[i].top+'px';
+                aLi[i].style.margin=0;
+            }
+                var timer;
+                var bFlag=false;//可运行
+            oBtn.onclick=function(){
+                var n=0;
+                if(bFlag)return;
+                bFlag=true;//在复原之前 点击按钮不起作用
+
+                timer=setInterval(function(){
+                    ;(function(index){
+                        move(aLi[n],{left:0,top:0,width:0, height:0, opacity:0},{complete :function(){
+                            if(index==aLi.length-1){
+                                n=aLi.length-1;   //n从8开始 减
+                                timer=setInterval(function(){
+                                    move(aLi[n],{left:aPos[n].left,top:aPos[n].top,width:200, height:200, opacity:1} );
+                                    n--;
+                                    if(n==-1){
+                                        clearInterval(timer);
+                                        bFlag=false;
+                                    }
+                                },100)
+                            }
+                        }})
+                    })(n);
+                    n++;
+                    if(n==aLi.length){
+                        clearInterval(timer);
+                    }
+                    console.log('n', n);
+                },100);
+            };
+        };
+    </script>
+</head>
+<body>
+    <input type="button" value="下一页" id="btn1">
+    <ul id="ul1">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+</html>

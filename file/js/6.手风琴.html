@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能社--http://www.zhinengshe.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #82ffe2;
+        }
+        #ul1{
+            width: 500px;
+            margin:50px auto;
+            position: relative;
+            height: 260px;
+            overflow: hidden;
+        }
+        #ul1 li{
+            width: 300px;
+            height: 260px;
+            position: absolute;
+            list-style: none;
+        }
+        #ul1 li img{
+            width: 100%;
+        }
+    </style>
+    <script src="jquery-1.7.2.js"></script>
+    <script>
+        $(function(){
+            var oUl=$('#ul1');
+            var oLi=oUl.children();
+            var W=50;
+            for(var i=1;i<oLi.length;i++){
+                oLi.eq(i).css('left',oLi.eq(0).outerWidth()+(i-1)*W+'px');
+            }
+            oLi.mouseover(function(){
+                for(var i=1;i<oLi.length;i++){
+                    if(i<=$(this).index()){
+                        oLi.eq(i).stop().animate({left: i*W});
+                    }else{
+                        oLi.eq(i).stop().animate({left: oLi.eq(0).outerWidth()+(i-1)*W});
+                    }
+                }
+            })
+        });
+
+        window.onload = function () {
+            var oUl=document.getElementById('ul1');
+            var aLi=oUl.children;
+            // 布局
+            var W=50;
+            for(var i=1; i<aLi.length; i++){
+                aLi[i].style.left=aLi[0].offsetWidth+(i-1)*W+'px';
+            }
+
+            // 加事件
+            for(var i=0; i<aLi.length; i++){
+                aLi[i].index=i;
+                aLi[i].onmouseover=function(){
+                    for(var i=1; i<aLi.length; i++){
+                        if(i<=this.index){
+                            move(aLi[i], {left: i*W});
+                        }else{
+                            move(aLi[i], {left: aLi[0].offsetWidth+(i-1)*W});
+                        }
+                    }
+                };
+            }
+        };
+    </script>
+</head>
+<body>
+    <ul id="ul1">
+        <li><img src="img/2.jpg"></li>
+        <li><img src="img/3.jpg"></li>
+        <li><img src="img/4.jpg"></li>
+        <li><img src="img/5.jpg"></li>
+        <li><img src="img/6.jpg"></li>
+    </ul>
+</body>
+</html>

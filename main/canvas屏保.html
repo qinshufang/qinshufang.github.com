@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qsf</title>
+    <style>
+        * {  margin: 0;  padding: 0;  }
+        body,html{overflow: hidden;}
+        canvas{background: #000;}
+
+    </style>
+    <script>
+        function rnd(n,m){
+            return parseInt(Math.random()*(m-n))+n;
+        }
+        window.onload = function (){
+            var oC=document.getElementById('c1');
+            oC.width=document.documentElement.clientWidth;
+            oC.height=document.documentElement.clientHeight;
+            var gd=oC.getContext('2d');     /*获取 绘图上下文*/
+            var N=5;
+            var LEN=10;
+            var aPoint=[];
+            var oldPoint=[];
+
+            for(var i=0; i<N; i++){
+                aPoint.push({
+                    x:rnd(0,oC.width),
+                    y:rnd(0,oC.height),
+                    iSpeedX:rnd(-10,10),
+                    iSpeedY:rnd(-10,10)
+                });
+            }
+
+            //移动，画图
+            setInterval(function (){
+                gd.clearRect(0,0,oC.width,oC.height); //先把画布清空
+
+                //改变每个点的x和y
+                for(var i=0; i<N; i++){
+                    if(aPoint[i].y<0 || aPoint[i].y>oC.height){
+                        aPoint[i].iSpeedY*=-1;
+                    }
+
+                    if(aPoint[i].x<0 || aPoint[i].x>oC.width){
+                        aPoint[i].iSpeedX*=-1;
+                    }
+
+                    aPoint[i].x+=aPoint[i].iSpeedX;   //改变点的 位置
+                    aPoint[i].y+=aPoint[i].iSpeedY;
+                }
+                //画点
+                for(var i=0; i<N; i++){
+                    drawPoint(aPoint[i]);
+                }
+
+                //连线
+                gd.beginPath();
+                gd.moveTo(aPoint[0].x,aPoint[0].y);
+                for(var i=1;i<N; i++){
+                    gd.lineTo(aPoint[i].x,aPoint[i].y);
+                }
+                gd.closePath();
+                gd.fillStyle='#fff';
+                gd.stroke();
+
+                //存历史点
+                var arr = [];
+                for(var i=0;i<N;i++){
+                    arr.push({
+                        x:aPoint[i].x,
+                        y:aPoint[i].y,
+                        iSpeedX:aPoint[i].iSpeedX,
+                        iSpeedY:aPoint[i].iSpeedY
+                    });
+                }
+
+                oldPoint.push(arr);
+
+                if(oldPoint.length>LEN){
+                    oldPoint.shift();
+                }
+
+                //连历史线
+                for(var i=0;i<LEN;i++){
+                    gd.beginPath();
+                    gd.moveTo(oldPoint[i][0].x,oldPoint[i][0].y);
+                    for(var j=1;j<N;j++){
+                        gd.lineTo(oldPoint[i][j].x,oldPoint[i][j].y);
+                    }
+                    gd.closePath();
+                    gd.strokeStyle = 'rgba(255,255,255,'+i/LEN+')';
+                    gd.stroke();
+                }
+
+
+            },16);
+
+            function drawPoint(oPoint){
+                gd.beginPath();
+                gd.fillStyle='#fff';
+                gd.fillRect(oPoint.x,oPoint.y,1,1);
+
+            }
+
+
+        };
+    </script>
+</head>
+<body>
+    <canvas id="c1" ></canvas>
+</body>
+</html>

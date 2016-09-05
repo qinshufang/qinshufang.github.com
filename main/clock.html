@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qsf</title>
+    <style>
+      #div1{position: relative; width: 300px; height: 300px; border: 10px solid #2e6da4; border-radius: 50%; box-shadow: 1px 2px 3px #000; margin: 100px auto;}
+
+      #div1 .hour,#div1 .min,#div1 .sec{transform-origin: center bottom;}
+      #div1 .hour{position: absolute; left: 50%; top: 50%; margin-left: -8px; margin-top: -80px; width: 15px; height: 80px; background: #000;  }
+      #div1 .min{position: absolute; left: 50%; top: 50%;  margin-left:-4px; margin-top:-100px;width: 8px; height: 100px; background: #000;}
+      #div1 .sec{position: absolute; left: 50%; top: 50%; margin-left: -1px; margin-top: -120px; width: 4px; height: 120px; background: #e74c3c; }
+      #div1 .cap{position: absolute; left: 50%; top: 50%; margin:-15px; width: 30px; height: 30px; border-radius: 50%; background: #000;}
+
+      #div1 span{position: absolute;left: 50%; top: 0; width: 2px; height: 8px; margin-left: -1px;background: #000; transform-origin: center 150px; }
+      #div1 span.on{height: 12px;}                                                                                 /* 此处为什么 不是 center bottom*/
+      #div1 span em{position: absolute; left: 50%; top: 12px; width: 40px; margin-left: -20px; text-align: center; font-style: normal;}
+
+    </style>
+    <script>
+        window.onload = function (){
+            var oDiv=document.querySelector('#div1');
+            var oH=oDiv.querySelector('.hour');
+            var oM=oDiv.querySelector('.min');
+            var oS=oDiv.querySelector('.sec');
+
+            function clock(){
+                var oDate=new Date();
+                var iH=oDate.getHours();
+                var iM=oDate.getMinutes();
+                var iS=oDate.getSeconds();
+                var iMs = oDate.getMilliseconds();
+
+                oH.style.transform='rotate('+(iH*30+iM/60*30)+'deg)';
+                oM.style.transform='rotate('+(iM*6+iS/60*6)+'deg)';
+                oS.style.transform='rotate('+(iS*6+iMs/1000*6)+'deg)';
+            }
+            clock();
+            setInterval(clock,30);
+
+            //刻度
+            for(var i=0; i<60; i++){
+                var oSpan=document.createElement('span');
+                oDiv.appendChild(oSpan);
+                if(i%5==0){
+                    oSpan.classList.add('on');    /*oSpan.className='on';*/
+                    oSpan.innerHTML='<em>'+(i==0?12:i/5)+'</em>';
+                    oSpan.children[0].style.transform='rotate('+-i*6+'deg)';
+                }
+                oSpan.style.transform='rotate('+i*6+'deg)';
+            }
+
+            //拖拽
+            oDiv.onmousedown = function(ev){
+                var oEvent = ev || event;
+                var disX = oEvent.clientX - oDiv.offsetLeft;
+                var disY = oEvent.clientY - oDiv.offsetTop;
+                document.onmousemove = function(ev){
+                    var oEvent = ev || event;
+                    oDiv.style.left = oEvent.clientX - disX + "px";
+                    oDiv.style.top  = oEvent.clientY - disY + "px";
+                };
+                document.onmouseup = function(){
+                    document.onmousemove = null;
+                    document.onmouseup = null;
+                    oDiv.releaseCapture && oDiv.releaseCapture();
+                };
+                oDiv.setCapture && oDiv.setCapture();
+                return false;
+            };
+
+        };
+    </script>
+</head>
+<body>
+    <div id="div1">
+        <div class="hour"></div>
+        <div class="min"></div>
+        <div class="sec"></div>
+        <div class="cap"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qsf</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="../move1.0.js"></script>
+    <script>
+        window.onload = function(){
+            var oWrap=document.getElementById('wrap');
+            var oUl=oWrap.children[0];
+            var aLi=oUl.children;
+
+            var w=aLi[0].offsetWidth/2;
+            var now=0;
+            oUl.onmousedown=function (ev) {
+                var oEvent=ev||event;
+                var disX=oEvent.clientX-oUl.offsetLeft;
+                var downX=oEvent.clientX;
+
+                document.onmousemove=function (ev) {
+                    var oEvent=ev||event;
+                    var l=oEvent.clientX-disX;
+                    oUl.style.left=l+'px';
+                };
+                document.onmouseup=function (ev) {
+                    var oEvent=ev||event;
+                    document.onmousemove=null;
+                    document.onmouseup=null;
+                    oUl.releaseCapture && oUl.releaseCapture();
+
+                    var upX=oEvent.clientX;
+                    if(Math.abs(upX-downX)>w){
+                        if(upX>downX){
+                            //右;
+                            now--;
+                            if(now<=0)now=0;
+                        }else {
+                            now++;
+                            if(now>aLi.length-1)now=aLi.length-1;
+                        }
+                    }
+                    //回到当前页
+                    move(oUl,{left:-now*aLi[0].offsetWidth});
+                };
+                oUl.setCapture && oUl.setCapture();
+                return false;
+            }
+        };
+    </script>
+</head>
+<body>
+<div id="iphone">
+    <div id="wrap">
+        <ul>
+            <li style="background:url(images/pic1.png);" title="智能课堂"></li>
+            <li style="background:url(images/pic2.png);" title="智能课堂"></li>
+            <li style="background:url(images/pic3.png);" title="智能课堂"></li>
+            <li style="background:url(images/pic4.png);" title="智能课堂"></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

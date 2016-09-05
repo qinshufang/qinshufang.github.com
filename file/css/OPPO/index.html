@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$(function(){
+	var aIcon=$('#icon div');
+	var aBanner=$('#banner a');
+	aIcon.mouseover(function(){
+		aIcon.removeClass('active');
+		$(this).addClass('active');
+		aBanner.removeClass('show');
+		$('#banner a').eq($(this).index()).addClass('show');
+		});
+		
+	var aBtn=$('#btn a');
+	var aCon=$('#con ul');
+	aBtn.mouseover(function(){
+		aBtn.removeClass('active');
+		$(this).addClass('active');
+		aCon.removeClass('show');
+		$('#con ul').eq($(this).index()).addClass('show');
+		});
+	});
+</script>
+
+</head>
+
+<body>
+	<div class="login-wrap">
+    	<div class="login clearfix">
+        	<div class="login-l fl clearfix">
+            	<span></span>
+                <i></i>
+                <b>4001-666-888</b>
+            </div>
+            <ul class="login-r fr clearfix">
+            	<li class="one"><a href="###">登录</a></li>
+                <li class="two"><a href="###">注册</a></li>
+                <li><a href="###">积分兑换</a></li>
+                <li><a href="###">帮助中心</a></li>
+                <li class="five clearfix"><span></span><a href="###" class="fl">购物车</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--login-wrap end-->
+    <div class="topnav-wrap clearfix">
+            <h2 class="fl">oppa<span></span></h2>
+            <ul class="fr clearfix">
+            	<li><a href="###">首页</a></li>
+                <li><a href="###">手机</a></li>
+                <li><a href="###">配件</a></li>
+                <li><a href="###">服务</a></li>
+                <li class="wid1"><a href="###">体验店</a></li>
+                <li class="wid2"><a href="###">软件商店</a></li>
+                <li class="wid2"><a href="###">ColorOS</a></li>
+                <li><a href="###">社区</a></li>
+            </ul>
+    </div>
+   <!--topnav end-->
+   <div class="banner-wrap"> 
+    	<div class="banner" id="banner">
+            <a href="###" class="banner-bg1 show" ><img src="img/20150202100021_PPLCdk.jpg" /></a>
+            <a href="###" class="banner-bg2"><img src="img/1.jpg" /></a>
+            <a href="###" class="banner-bg3"><img src="img/2.jpg"/></a>
+            <a href="###" class="banner-bg4"><img src="img/3.jpg"/></a>                                
+        	<a href="###"><img src="img/20150202100021_TgEOkp.png" class="banner-con"/></a>
+         </div>
+         <div class="icon clearfix" id="icon">
+            <div class="icon1 active fl"><a href="###"></a></div>
+            <div class="icon2 fl"><a href="###"></a></div>
+            <div class="icon3 fl"><a href="###"></a></div>
+            <div class="icon4 fl"><a href="###"></a></div>
+        </div>    
+        <div class="opa1"></div>
+        <div class="opa2"></div>
+        <div class="bor"></div>
+    </div>
+    <!--banner-wrap end-->
+    <div class="box-1">
+    	<div class="tit1"></div>
+        <ul class="clearfix">
+        	<li class="first">
+            	<div class="product">
+                		<div class="box1-pic">
+                            <a href="###"><img src="img/8_03.jpg" /></a>
+                            <a href="###"><img src="img/pic-s.png" /></a>
+                        </div>
+                        <h6>N3</h6>
+                        <P>1600万电动旋转摄像头</P>
+                        <div class="price clearfix">
+                            <i class="fl">¥ 3999&nbsp;&nbsp;立即购买</i>
+                            <span class="fr"></span>
+                        </div>
+                </div>
+            </li>
+            <li>
+            	<div class="product">
+                		<div class="box1-pic">
+                            <a href="###"><img src="img/8_05.jpg" /></a>
+                            <a href="###"><img src="img/pic-s.png" /></a>
+                        </div>
+                        <h6>R5</h6>
+                        <P>薄至4.85mm</P>
+                        <div class="price clearfix">
+                            <i class="fl">¥ 2999&nbsp;&nbsp;立即购买</i>
+                            <span class="fr"></span>
+                        </div>
+                </div>
+            </li>
+            <li>
+            	<div class="product">
+                		<div class="box1-pic">
+                            <a href="###"><img src="img/8_07.jpg" /></a>
+                            <a href="###"><img src="img/pic-s.png" /></a>
+                        </div>
+                        <h6>Find7</h6>
+                        <P>4G全能旗舰</P>
+                        <div class="price clearfix">
+                            <i class="fl">¥ 2999&nbsp;&nbsp;立即购买</i>
+                            <span class="fr"></span>
+                        </div>
+                </div>
+            </li>
+            <li class="last">
+            	<div class="product">
+                		<div class="box1-pic">
+                            <a href="###"><img src="img/8_09.jpg" /></a>
+                            <a href="###"><img src="img/pic-s.png" /></a>
+                        </div>
+                        <h6>R1C</h6>
+                        <P>钻石流光镜面</P>
+                        <div class="price clearfix">
+                            <i class="fl">¥ 2499&nbsp;&nbsp;立即购买</i>
+                            <span class="fr"></span>
+                        </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--box1 end-->
+    <div class="box-2">
+    	<div class="tit2"></div>
+        <ul class="clearfix">
+        	<li class="box2-l fl clearfix">
+            	<a href="###" class="first fl"><img src="img/9_03.jpg" /></a>
+                <div class="fl">
+                    <a href="###"><img src="img/9_05.jpg"  class="second" /></a>
+                    <a href="###"><img src="img/9_11.jpg" /></a>
+                </div>
+                <a href="###" class="fl"><img src="img/9_18.jpg" /></a>            
+            </li>
+            <li class="box2-r fl">
+            	<a href="###" class="fl"><img src="img/9_07.jpg" /></a>
+                <a href="###" class="fl"><img src="img/9_12.jpg"  class="third" /></a>
+                <div class="fl">
+                    <a href="###"><img src="img/9_14.jpg" class="fouth" /></a>                
+                    <a href="###" class="fl"><img src="img/9_19.jpg" /></a>
+                </div>            
+            </li>
+        </ul>
+    </div>
+    <!--box-2 end-->
+    <div class="box-3">
+    	<div class="tit3"></div>
+        <ul class="clearfix">
+        	<li>
+            	<a href="###"><img src="img/10_23.jpg" class="first" /></a>
+                <a href="###"><img src="img/10_34.jpg" /></a>
+            </li>
+            <li class="center">
+            	<a href="###"><img src="img/10_25.jpg" class="first" /></a>
+                <a href="###"><img src="img/10_30.jpg" /></a>
+            </li>
+            <li>
+            	<div class="btn clearfix" id="btn">
+                	<a href="###" class="active">新闻</a>
+                    <a href="###">微博</a>
+                </div>
+                <div class="con" id="con">
+                        <ul class="con1 show">
+                            <li class="clearfix">
+                            	<a href="###" class="pic fl"><img src="img/10_28.jpg" /></a>
+                            	<a href="###" class="detail fl">业界革命，OPPO发布全球最高灵敏度平面振膜耳机PM-1</a>
+                            </li>
+                            <li class="clearfix">
+                            	<a href="###" class="pic fl"><img src="img/10_31.jpg" /></a>
+                            	<a href="###" class="detail fl">极致原音 OPPO PM-1耳机斩获EISA年度HIFI大奖</a>
+                            </li>
+                            <li class="clearfix">
+                            	<a href="###" class="pic fl"><img src="img/10_37.jpg" /></a>
+                            	<a href="###" class="detail fl">OPPO或在巴塞罗那MWC通讯展发布ColorOS 2.0</a>
+                            </li>
+                            <li class="clearfix">
+                            	<a href="###" class="pic fl"><img src="img/10_39.jpg" /></a>
+                            	<a href="###" class="detail fl">OPPO N1入选英国《stuff》杂志年度TOP 10</a>
+                            </li>
+                        </ul>
+                        <ul class="con2">
+                            <li class="clearfix">
+                            	<a href="###" class="pic fl"><img src="img/10_31.jpg" /></a>
+                            	<a href="###" class="detail fl">业界革命，OPPO发布全球最高灵敏度平面振膜耳机PM-1</a>
+                            </li>
+                            <li class="clearfix">
+                            	<a href="###" class="pic fl"><img src="img/10_37.jpg" /></a>
+                            	<a href="###" class="detail fl">极致原音 OPPO PM-1耳机斩获EISA年度HIFI大奖</a>
+                            </li>
+                            <li class="clearfix">
+                            	<a href="###" class="pic fl"><img src="img/10_28.jpg" /></a>
+                            	<a href="###" class="detail fl">OPPO或在巴塞罗那MWC通讯展发布ColorOS 2.0</a>
+                            </li>
+                            <li class="clearfix">
+                            	<a href="###" class="pic fl"><img src="img/10_39.jpg" /></a>
+                            	<a href="###" class="detail fl">OPPO N1入选英国《stuff》杂志年度TOP 10</a>
+                            </li>
+                        </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--box-3 end-->
+    <div class="banner-bottom"><a href="###"></a></div>
+    <div class="link-wrap">
+    	<div class="link clearfix">
+            	<dl>
+                	<dt><a href="###">关于我们</a></dt>
+                    <dd><a href="###">&diams;关于OPPO</a></dd>
+                    <dd><a href="###">&diams;新闻中心</a></dd>
+                    <dd><a href="###">&diams;人才招聘</a></dd>
+                </dl>  
+                <dl>
+                	<dt><a href="###">推荐机型</a></dt>
+                    <dd><a href="###">&diams;N3</a></dd>
+                    <dd><a href="###">&diams;R5</a></dd>
+                    <dd><a href="###">&diams;R1C</a></dd>
+                    <dd><a href="###">&diams;Find 7</a></dd>
+                </dl>  
+                <dl>
+                	<dt><a href="###">购物相关</a></dt>
+                    <dd><a href="###">&diams;帮助中心</a></dd>
+                    <dd><a href="###">&diams;周边产品</a></dd>
+                    <dd><a href="###">&diams;OPPO体验店</a></dd>
+                    <dd><a href="###">&diams;客户服务政策</a></dd>
+                </dl>  
+                <dl>
+                	<dt><a href="###">会员中心</a></dt>
+                    <dd><a href="###">&diams;产品注册</a></dd>
+                    <dd><a href="###">&diams;会员注册</a></dd>
+                    <dd><a href="###">&diams;会员登录</a></dd>
+                </dl>  
+                <dl class="consider">
+                	<dt><a href="###">关注我们</a></dt>
+                    <dd><a href="###" class="clearfix"><span class="icon1 fl"></span>新浪微博</a></dd>
+                    <dd><a href="###" class="clearfix"><span class="icon2 fl"></span>腾讯微博</a></dd>
+                    <dd><a href="###" class="clearfix"><span class="icon3 fl"></span>人人网</a></dd>
+                    <dd><a href="###" class="clearfix"><span class="icon4 fl"></span>QQ空间</a></dd>
+                </dl> 
+                <dl class="contact">
+                	<dt><a href="###">联系我们</a></dt>
+                    <dd>
+                        <a href="###" class="contact1 clearfix">
+                        	<span class="fl"></span>
+                            <div class="fl contact-r">
+                                <i>4001-666-888</i><br />
+                                <b>7*24小时客服电话</b>
+                            </div>
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="###" class="contact2 clearfix">
+                        	<em class="fl"></em>
+                            <div class="fl contact-r">
+                                <i>在线客服</i><br />
+                                <b>服务时段：8:30--22:00</b>
+                            </div>
+                        </a>
+                    </dd>
+                </dl>   
+        </div>
+    </div>
+    <div class="footer-wrap">
+    	<div class="footer clearfix">
+        	<span class="fl"></span>
+            <p class="fl">@ 2005-2015东莞市永盛通信科技有限公司 版权所有（粤ICP备 08130115号）</p>
+            <ul class="fr clearfix">
+            	<li><a href="###">版权说明</a></li>
+                <li><a href="###">使用协议</a></li>
+                <li><a href="###">网站地图</a></li>
+                <li><a href="###">友情链接</a></li>
+                <li><a href="###">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

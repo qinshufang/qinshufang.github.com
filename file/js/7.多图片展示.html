@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>智能社--http://www.zhinengshe.com</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #ul1{
+            width: 660px;
+            margin: 0 auto;
+        }
+        #ul1 li{
+            width: 210px;
+            height: 210px;
+            border: 1px solid #f1afc1;
+            float: left;
+            list-style: none;
+            margin: 4px;
+        }
+        #ul1 li img{
+            width: 100%;
+        }
+    </style>
+    <script src="jquery-1.7.2.js"></script>
+    <script>
+        $(function(){
+            var oUl=$('#ul1');
+            var oLi=oUl.children();
+            var zIndex=999;
+            var aPos=[];        // 装我们的aLi位置
+            for(var i=0; i<oLi.length; i++){
+                aPos[i]={
+                    left: oLi.eq(i).offset().left,
+                    top: oLi.eq(i).offset().top
+                };
+            }
+            for(var i=0; i<oLi.length; i++){
+                oLi.eq(i).css({'position':'absolute','top':aPos[i].top+'px','left':aPos[i].left+'px','margin':0});
+            }
+            oLi.hover(function(){
+                $(this).css('zIndex',zIndex++);
+                $(this).stop().animate({width: 410, height: 410, marginLeft: -100, marginTop: -100});
+            },function(){
+                $(this).stop().animate({width: 210, height: 210, marginLeft: 0, marginTop: 0});
+            });
+        });
+    </script>
+</head>
+<body>
+<ul id="ul1">
+    <li><img src="img/01.jpg"></li>
+    <li><img src="img/02.jpg"></li>
+    <li><img src="img/03.jpg"></li>
+    <li><img src="img/04.jpg"></li>
+    <li><img src="img/05.jpg"></li>
+    <li><img src="img/06.jpg"></li>
+    <li><img src="img/07.jpg"></li>
+    <li><img src="img/08.jpg"></li>
+    <li><img src="img/09.jpg"></li>
+</ul>
+</body>
+</html>

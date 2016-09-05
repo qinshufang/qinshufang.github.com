@@ -1,0 +1,2748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>360影视-更新更全更受欢迎的影视网站-在线观看</title>
+    <link href="css/base.css" rel="stylesheet" />
+    <link href="css/360style.css" rel="stylesheet" />
+    <script>
+        window.onload=function(){
+            var oBox=document.getElementById('ser');
+            var aBtn=oBox.getElementsByTagName('input');
+            var aCon=oBox.getElementsByTagName('ul')[0];
+            oBox.onmouseover=function(){
+                    aCon.style.display='block';
+            };
+            oBox.onmouseout=function(){
+                aCon.style.display='none';
+            };
+            var aBox1=document.getElementById('watch');
+            var aCon1=document.getElementById('watch-rec');
+            aBox1.onmouseover=function(){
+                    aCon1.style.display='block';
+            };
+            aBox1.onmouseout=function(){
+                aCon1.style.display='none';
+            };
+            function box(a,b){
+                var oBox3=document.getElementById(a);
+                var aBtn3=oBox3.getElementsByTagName('a');
+                var oCon3=document.getElementById(b);
+                var aCon3=oCon3.getElementsByTagName('ul');
+                for(var i=0; i<aBtn3.length; i++){
+                    aBtn3[i].index=i;
+                    aBtn3[i].onmouseover=function(){
+                        for(var i=0; i<aBtn3.length; i++){
+                            aBtn3[i].className='';
+                            aCon3[i].className='new-con';
+                        };
+                        this.className='active';
+                        aCon3[this.index].className='new-con active';
+                    };
+                };
+            };
+            box('new_btn','new_con');
+            box('tv_btn','tv_con');
+            box('mv_btn','mv_con');
+            function news(a){
+                var oBox4=document.getElementById(a);
+                var aCon4=oBox4.getElementsByTagName('li');
+                var oH=oBox4.getElementsByTagName('h3');
+                var oA=oBox4.getElementsByTagName('a');
+                for(var i=0; i<aCon4.length; i++){
+                    aCon4[i].index=i;
+                    aCon4[i].onmouseover=function(){
+                        for(var i=0; i<aCon4.length; i++){
+                            if(i%2==1){
+                                oH[i].className='new-con-tit';
+                            }else{
+                                oH[i].className='new-con-tit bg-3';
+                            };
+                            oA[i].className='new-con-img';
+                        };
+                        oH[this.index].className='new-con-tit hide';
+                        oA[this.index].className='new-con-img show';
+                    };
+                };
+            };
+            news('new_con1');
+            news('new_con2');
+            news('new_con3');
+            news('new_con4');
+            news('new_con5');
+            news('tv_con1');
+            news('tv_con2');
+            news('tv_con3');
+            news('tv_con4');
+            news('mv_con1');
+            news('mv_con2');
+            news('mv_con3');
+            news('mv_con4');
+            function box2(a,b){
+                var oBox5=document.getElementById(a);
+                var aBtn5=oBox5.getElementsByTagName('p');
+                var oCon5=document.getElementById(b);
+                var aCon5=oCon5.getElementsByTagName('ul');
+                for(var i=0; i<aBtn5.length; i++){
+                    aBtn5[i].index=i;
+                    aBtn5[i].onmouseover=function(){
+                        for(var i=0; i<aBtn5.length; i++){
+                            aBtn5[i].className='';
+                            aCon5[i].className='';
+                        };
+                        this.className='active';
+                        aCon5[this.index].className='active';
+                    };
+                };
+            };
+            box2('tv-list2-l','tv-list2-r');
+        }
+    </script>
+
+</head>
+<body>
+<!--header 开始-->
+    <div class="header-wrap">
+        <div class="header clearfix">
+            <div class="logo fl"><img src="img/t015b0a114dfb0c1ff9.png" /></div>
+            <div class="logo2 fl"><img src="img/t01d1539b9efec9c52e.png" /></div>
+            <div class="ser fl" id="ser">
+                <input type="text" placeholder="王牌对王牌" class="text"/>
+                <ul class="hot-ser">
+                    <li>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="fl spe">1</span>王牌对王牌
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="fl spe">2</span>我是歌手
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="fl spe">3</span>太阳的后裔
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="fl">4</span>武神赵子龙
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="fl">5</span>欢乐喜剧人
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="fl">6</span>旋风十一人
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="fl">7</span>山海经之赤影传说
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="fl">8</span>快乐大本营
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="fl">9</span>两个女人的战争
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="fl">10</span>澳门风云3
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="head-more clearfix fr">
+                <li class="fl">
+                    <a href="javascript:;" class="clearfix">
+                        <span class="fl"></span>我的影视
+                    </a>
+                </li>
+                <li class="fl" id="watch">
+                    <h3>
+                        <a href="javascript:;" class="clearfix">
+                            <span class="bg-1 fl"></span>观看记录
+                        </a>
+                    </h3>
+                    <div class="watch-rec" id="watch-rec">
+                        <ul>
+                            <li>更早</li>
+                            <li>
+                                <a href="javascript:;" class="clearfix">
+                                    <em class="fl">快乐大本营</em>
+                                    <i class="fl">综艺</i>
+                                    <b class="fl"></b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="clearfix">
+                                    <em class="fl">旋风孝子</em>
+                                    <i class="fl">综艺</i>
+                                    <b class="fl"></b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="clearfix">
+                                    <em class="fl">花样姐姐 第二季</em>
+                                    <i class="fl">综艺</i>
+                                    <b class="fl"></b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="clearfix">
+                                    <em class="fl">天天向上</em>
+                                    <i class="fl">综艺</i>
+                                    <b class="fl"></b>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;" class="clearfix">
+                                    <em class="fl">王牌对王牌</em>
+                                    <i class="fl">综艺</i>
+                                    <b class="fl"></b>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="fl width-1">
+                    <a href="javascript:;" class="clearfix col-1">
+                        <span class="bg-2 fl"></span>APP下载
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!--header 结束-->
+<!--top nav 开始-->
+    <div class="top-nav-wrap">
+        <div class="top-nav clearfix">
+            <ul class="top-nav-left clearfix fl">
+                <li><a href="javascript:;">首页</a></li>
+                <li class="width-1"><a href="javascript:;">电视剧</a></li>
+                <li><a href="javascript:;">电影</a></li>
+                <li><a href="javascript:;">综艺</a></li>
+                <li><a href="javascript:;">动漫</a></li>
+                <li><a href="javascript:;">资讯</a></li>
+                <li><a href="javascript:;">娱乐</a></li>
+                <li class="width-1"><a href="javascript:;">电视台</a></li>
+                <li class="width-1"><a href="javascript:;">广场舞</a></li>
+                <li><a href="javascript:;">音乐</a></li>
+            </ul>
+            <ul class="top-nav-right clearfix fr">
+                <li><a href="javascript:;">美女</a></li>
+                <li><a href="javascript:;">体育</a></li>
+                <li><a href="javascript:;">搞笑</a></li>
+                <li><a href="javascript:;">音乐</a></li>
+                <li><a href="javascript:;">专题</a></li>
+            </ul>
+        </div>
+    </div>
+<!--top nav 结束-->
+<!--banner 开始-->
+    <div class="banner-wrap">
+        <div class="banner">
+            <div class="ban-left">
+                <a href="javascript:;">
+                    <img src="img/t014ad73920f5e628af.jpg" />
+                    <div class="opa-box">
+                        <div class="opa"></div>
+                        <div class="opa-con">
+                            <h3>武神赵子龙</h3>
+                            <p>林更新林允儿双林CP演绎三国版“战争与爱情”</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="ban-cen">
+                <a href="javascript:;" class="ban-cen-top">
+                    <img src="img/t01fd34adc1451b2810.jpg" />
+                    <div class="opa-box">
+                        <div class="opa"></div>
+                        <div class="opa-con">
+                            <h3>武神赵子龙</h3>
+                            <p>林更新林允儿双林CP演绎三国版“战争与爱情”</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="ban-cen-left">
+                    <img src="img/t0185a279d4f89e3860.jpg" />
+                    <div class="opa-box">
+                        <div class="opa"></div>
+                        <div class="opa-con">
+                            <h3>武神赵子龙</h3>
+                            <p>林更新林允儿双林CP演绎三国版“战争与爱情”</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="javascript:;" class="ban-cen-right">
+                    <img src="img/t01bd6017edb32b0b58.jpg" />
+                    <div class="opa-box">
+                        <div class="opa"></div>
+                        <div class="opa-con">
+                            <h3>武神赵子龙</h3>
+                            <p>林更新林允儿双林CP演绎三国版“战争与爱情”</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="ban-right">
+                <a href="javascript:;">
+                    <img src="img/t01280559162595c584.jpg" />
+                    <div class="opa-box">
+                        <div class="opa"></div>
+                        <div class="opa-con">
+                            <h3>武神赵子龙</h3>
+                            <p>林更新林允儿双林CP演绎三国版“战争与爱情”</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+<!--banner 结束-->
+<!--热点聚焦 开始-->
+    <div class="hot-news clearfix">
+        <div class="new-left fl">
+            <h4>热点聚焦</h4>
+            <div class="new-box">
+                <img src="img/t0143fc780413b74948.jpg" />
+                <h6>90后女模三围逆天</h6>
+                <p>据本人透露“拒绝减肥才这样”</p>
+            </div>
+            <div class="new-box2">
+                <div class="new-opa clearfix">
+                    <div class="new-opa-box fl">
+                        <img src="img/t011c42715ed29a6799.jpg"/>
+                        <div class="opa2"></div>
+                        <p>其实她们只是在炫富！</p>
+                        <h5>外媒吐槽A4腰I6腿</h5>
+                    </div>
+                    <div class="new-opa-box fr">
+                        <img src="img/t011c42715ed29a6799.jpg"/>
+                        <div class="opa2"></div>
+                        <p>其实她们只是在炫富！</p>
+                        <h5>外媒吐槽A4腰I6腿</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="new-cen fl">
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-l mar-r fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-l mar-r fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-l mar-b fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-l mar-b fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-l mar-r mar-b fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+        </div>
+        <div class="new-right fr">
+            <h4>影视排行榜</h4>
+            <div class="new-right-box">
+                <div class="new-btn clearfix" id="new_btn">
+                    <a href="javascript:;">全部</a>
+                    <a href="javascript:;" class="active">电视剧</a>
+                    <a href="javascript:;">电影</a>
+                    <a href="javascript:;">综艺</a>
+                    <a href="javascript:;">动漫</a>
+                </div>
+                <div class="new-con-box" id="new_con">
+                    <ul class="new-con" id="new_con1">
+                        <li>
+                            <h3 class="new-con-tit bg-3 hide">
+                                <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img show">
+                                <img src="img/t010681fb3d30c2d048.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">澳门风云</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="new-con active"  id="new_con2">
+                        <li>
+                            <h3 class="new-con-tit bg-3 hide">
+                                <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img show">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="new-con"   id="new_con3">
+                        <li>
+                            <h3 class="new-con-tit bg-3 hide">
+                                <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img show">
+                                <img src="img/t010681fb3d30c2d048.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">澳门风云</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="new-con"   id="new_con4">
+                        <li>
+                            <h3 class="new-con-tit bg-3 hide">
+                                <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img show">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="new-con"   id="new_con5">
+                        <li>
+                            <h3 class="new-con-tit bg-3 hide">
+                                <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img show">
+                                <img src="img/t010681fb3d30c2d048.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">澳门风云</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="new-bottom fl">
+            <div class="new-bottom-tit mar-t fl">
+                <h3>和颐酒店女生遇袭事件</h3>
+                <p>持续发酵 引发全民热议</p>
+            </div>
+            <div class="new-opa-box mar-t fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-t fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-t fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-t fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+            <div class="new-opa-box mar-t fl">
+                <img src="img/t011c42715ed29a6799.jpg"/>
+                <div class="opa2"></div>
+                <p>其实她们只是在炫富！</p>
+                <h5>外媒吐槽A4腰I6腿</h5>
+            </div>
+        </div>
+    </div>
+<!--热点聚焦 结束-->
+<!--电视剧 开始-->
+    <div class="tv clearfix">
+        <div class="tv-left fl">
+            <div class="tv-tit  clearfix">
+                <h3 class="fl">最新电视剧</h3>
+                <div class="tv-left-tit clearfix fl">
+                    <a href="javascript">军事</a>
+                    <span>/</span>
+                    <a href="javascript">言情</a>
+                    <span>/</span>
+                    <a href="javascript">古装</a>
+                    <span>/</span>
+                    <a href="javascript">喜剧</a>
+                    <span>/</span>
+                    <a href="javascript">都市</a>
+                    <span>/</span>
+                    <a href="javascript">谍战</a>
+                    <span>/</span>
+                    <a href="javascript">更多&gt;&gt;</a>
+                </div>
+            </div>
+            <div class="tv-left-con clearfix">
+                <div class="new-opa-box2 mar-l fl">
+                    <img src="img/t011d843481c730cfa3.jpg"/>
+                    <div class="opa3"></div>
+                    <p>更新至14集</p>
+                    <h5>太阳的后裔</h5>
+                    <span>行走的春药大写的撩</span>
+                </div>
+                <div class="new-opa-box2 mar-l fl">
+                    <img src="img/t011d843481c730cfa3.jpg"/>
+                    <div class="opa3"></div>
+                    <p>更新至14集</p>
+                    <h5>太阳的后裔</h5>
+                    <span>行走的春药大写的撩</span>
+                </div>
+                <div class="new-opa-box2 mar-l fl">
+                    <img src="img/t011d843481c730cfa3.jpg"/>
+                    <div class="opa3"></div>
+                    <p>更新至14集</p>
+                    <h5>太阳的后裔</h5>
+                    <span>行走的春药大写的撩</span>
+                </div>
+                <div class="new-opa-box2 mar-l fl">
+                    <img src="img/t011d843481c730cfa3.jpg"/>
+                    <div class="opa3"></div>
+                    <p>更新至14集</p>
+                    <h5>太阳的后裔</h5>
+                    <span>行走的春药大写的撩</span>
+                </div>
+                <div class="new-opa-box2 mar-r mar-l fl">
+                    <img src="img/t011d843481c730cfa3.jpg"/>
+                    <div class="opa3"></div>
+                    <p>更新至14集</p>
+                    <h5>太阳的后裔</h5>
+                    <span>行走的春药大写的撩</span>
+                </div>
+                <div class="new-opa-box2 mar-l fl">
+                    <img src="img/t011d843481c730cfa3.jpg"/>
+                    <div class="opa3"></div>
+                    <p>更新至14集</p>
+                    <h5>太阳的后裔</h5>
+                    <span>行走的春药大写的撩</span>
+                </div>
+                <div class="new-opa-box2 mar-l fl">
+                    <img src="img/t011d843481c730cfa3.jpg"/>
+                    <div class="opa3"></div>
+                    <p>更新至14集</p>
+                    <h5>太阳的后裔</h5>
+                    <span>行走的春药大写的撩</span>
+                </div>
+                <div class="new-opa-box2 mar-l fl">
+                    <img src="img/t011d843481c730cfa3.jpg"/>
+                    <div class="opa3"></div>
+                    <p>更新至14集</p>
+                    <h5>太阳的后裔</h5>
+                    <span>行走的春药大写的撩</span>
+                </div>
+                <div class="new-opa-box2 mar-l fl">
+                    <img src="img/t011d843481c730cfa3.jpg"/>
+                    <div class="opa3"></div>
+                    <p>更新至14集</p>
+                    <h5>太阳的后裔</h5>
+                    <span>行走的春药大写的撩</span>
+                </div>
+                <div class="new-opa-box2 mar-r mar-l fl">
+                    <img src="img/t011d843481c730cfa3.jpg"/>
+                    <div class="opa3"></div>
+                    <p>更新至14集</p>
+                    <h5>太阳的后裔</h5>
+                    <span>行走的春药大写的撩</span>
+                </div>
+            </div>
+            <h3 class="top-l-b-tit">电视剧神吐槽</h3>
+            <div class="top-l-b-con clearfix">
+                <div class="new-opa-box mar-l fl">
+                    <img src="img/ba6672a5b18a4e6096dc885623936ec9.jpg"/>
+                    <div class="opa2"></div>
+                    <p>宋钟基老公合辑</p>
+                    <h5>弹幕黑出翔</h5>
+                </div>
+                <div class="new-opa-box mar-l fl">
+                    <img src="img/ba6672a5b18a4e6096dc885623936ec9.jpg"/>
+                    <div class="opa2"></div>
+                    <p>宋钟基老公合辑</p>
+                    <h5>弹幕黑出翔</h5>
+                </div>
+                <div class="new-opa-box mar-l fl">
+                    <img src="img/ba6672a5b18a4e6096dc885623936ec9.jpg"/>
+                    <div class="opa2"></div>
+                    <p>宋钟基老公合辑</p>
+                    <h5>弹幕黑出翔</h5>
+                </div>
+                <div class="new-opa-box mar-l fl">
+                    <img src="img/ba6672a5b18a4e6096dc885623936ec9.jpg"/>
+                    <div class="opa2"></div>
+                    <p>宋钟基老公合辑</p>
+                    <h5>弹幕黑出翔</h5>
+                </div>
+                <div class="new-opa-box mar-l mar-r fl">
+                    <img src="img/ba6672a5b18a4e6096dc885623936ec9.jpg"/>
+                    <div class="opa2"></div>
+                    <p>宋钟基老公合辑</p>
+                    <h5>弹幕黑出翔</h5>
+                </div>
+            </div>
+        </div>
+        <div class="tv-right fr">
+            <h4>电视剧分类榜</h4>
+            <div class="new-right-box">
+                <div class="new-btn clearfix" id="tv_btn">
+                    <a href="javascript:;">古装</a>
+                    <a href="javascript:;" class="active">军事</a>
+                    <a href="javascript:;">偶像</a>
+                    <a href="javascript:;">谍战</a>
+                </div>
+                <div class="new-con-box" id="tv_con">
+                    <ul class="new-con" id="tv_con1">
+                        <li>
+                            <h3 class="new-con-tit bg-3 hide">
+                                <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img show">
+                                <img src="img/t010681fb3d30c2d048.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">澳门风云</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="new-con active"  id="tv_con2">
+                        <li>
+                            <h3 class="new-con-tit bg-3 hide">
+                                <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img show">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="new-con"   id="tv_con3">
+                        <li>
+                            <h3 class="new-con-tit bg-3 hide">
+                                <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img show">
+                                <img src="img/t010681fb3d30c2d048.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">澳门风云</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="new-con"   id="tv_con4">
+                        <li>
+                            <h3 class="new-con-tit bg-3 hide">
+                                <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img show">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit bg-3">
+                                <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                        <li>
+                            <h3 class="new-con-tit">
+                                <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                            </h3>
+                            <a href="javascript:;" class="new-con-img">
+                                <img src="img/t016b712d026082e57a.jpg" />
+                                <div class="opa3"></div>
+                                <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h6 class="tv-right-tit">电视剧筛选<span>更多&gt;&gt;</span></h6>
+            <div class="tv-list">
+                <dl class="clearfix">
+                    <dt><a href="javascript:;">类型</a></dt>
+                    <dd><a href="javascript:;">军事</a></dd>
+                    <dd><a href="javascript:;">古装</a></dd>
+                    <dd><a href="javascript:;">谍战</a></dd>
+                    <dd><a href="javascript:;">喜剧</a></dd>
+                    <dd><a href="javascript:;">言情</a></dd>
+                    <dd><a href="javascript:;">伦理</a></dd>
+                    <dd><a href="javascript:;">都市</a></dd>
+                    <dd><a href="javascript:;">警匪</a></dd>
+                    <dd><a href="javascript:;">神话</a></dd>
+                    <dd><a href="javascript:;">神话</a></dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><a href="javascript:;">地区</a></dt>
+                    <dd><a href="javascript:;">内地</a></dd>
+                    <dd><a href="javascript:;">香港</a></dd>
+                    <dd><a href="javascript:;">韩国</a></dd>
+                    <dd><a href="javascript:;">美国</a></dd>
+                    <dd><a href="javascript:;">台湾</a></dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt><a href="javascript:;">演员</a></dt>
+                    <dd><a href="javascript:;">胡歌</a></dd>
+                    <dd><a href="javascript:;">孙俪</a></dd>
+                    <dd><a href="javascript:;">唐嫣</a></dd>
+                    <dd><a href="javascript:;">杨幂</a></dd>
+                    <dd><a href="javascript:;">王凯</a></dd>
+                </dl>
+            </div>
+            <h6 class="tv-right-tit">卫视直播<span>更多&gt;&gt;</span></h6>
+            <div class="tv-list2 clearfix" id="tv_list2">
+                <div class="tv-list2-l fl" id="tv-list2-l">
+                    <p class="active" id="tv-bg-1">湖南卫视</p>
+                    <p id="tv-bg-2">江苏卫视</p>
+                    <p id="tv-bg-3">东方卫视</p>
+                    <p id="tv-bg-4">浙江卫视</p>
+                </div>
+                <div class="tv-list2-r fr" id="tv-list2-r">
+                    <ul class="active">
+                        <li><a href="javascript:;">武神赵子龙<span>至11集</span></a></li>
+                        <li><a href="javascript:;">山海经之赤影传说<span>至18集</span></li>
+                        <li><a href="javascript:;">因为爱情有幸福<span>全66集</span></li>
+                        <li><a href="javascript:;">青丘狐传说<span>全32集</span></li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:;">太阳的后裔<span>至11集</span></a></li>
+                        <li><a href="javascript:;">山海经之赤影传说<span>至18集</span></li>
+                        <li><a href="javascript:;">因为爱情有幸福<span>全66集</span></li>
+                        <li><a href="javascript:;">青丘狐传说<span>全32集</span></li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:;">武神赵子龙<span>至11集</span></a></li>
+                        <li><a href="javascript:;">山海经之赤影传说<span>至18集</span></li>
+                        <li><a href="javascript:;">因为爱情有幸福<span>全66集</span></li>
+                        <li><a href="javascript:;">青丘狐传说<span>全32集</span></li>
+                    </ul>
+                    <ul>
+                        <li><a href="javascript:;">太阳的后裔<span>至11集</span></a></li>
+                        <li><a href="javascript:;">山海经之赤影传说<span>至18集</span></li>
+                        <li><a href="javascript:;">因为爱情有幸福<span>全66集</span></li>
+                        <li><a href="javascript:;">青丘狐传说<span>全32集</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--电视剧 结束-->
+<!--电影 开始-->
+    <div class="tv clearfix">
+    <div class="tv-left fl">
+        <div class="tv-tit  clearfix">
+            <h3 class="fl">热门电影</h3>
+            <div class="tv-left-tit clearfix fl">
+                <a href="javascript">军事</a>
+                <span>/</span>
+                <a href="javascript">喜剧</a>
+                <span>/</span>
+                <a href="javascript">动作</a>
+                <span>/</span>
+                <a href="javascript">犯罪</a>
+                <span>/</span>
+                <a href="javascript">爱情</a>
+                <span>/</span>
+                <a href="javascript">科幻</a>
+                <span>/</span>
+                <a href="javascript">伦理</a>
+                <span>/</span>
+                <a href="javascript">更多&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="tv-left-con clearfix">
+            <div class="new-opa-box2 mar-l fl">
+                <img src="img/t0105baa9b51a0ee4ed.jpg"/>
+                <div class="opa3"></div>
+                <p>2016</p>
+                <h5>西游记之三打白骨精</h5>
+                <span>最美白骨精巩俐斗法师徒四人</span>
+            </div>
+            <div class="new-opa-box2 mar-l fl">
+                <img src="img/t0105baa9b51a0ee4ed.jpg"/>
+                <div class="opa3"></div>
+                <p>2016</p>
+                <h5>西游记之三打白骨精</h5>
+                <span>最美白骨精巩俐斗法师徒四人</span>
+            </div>
+            <div class="new-opa-box2 mar-l fl">
+                <img src="img/t0105baa9b51a0ee4ed.jpg"/>
+                <div class="opa3"></div>
+                <p>2016</p>
+                <h5>西游记之三打白骨精</h5>
+                <span>最美白骨精巩俐斗法师徒四人</span>
+            </div>
+            <div class="new-opa-box2 mar-l fl">
+                <img src="img/t0105baa9b51a0ee4ed.jpg"/>
+                <div class="opa3"></div>
+                <p>2016</p>
+                <h5>西游记之三打白骨精</h5>
+                <span>最美白骨精巩俐斗法师徒四人</span>
+            </div>
+            <div class="new-opa-box2 mar-r mar-l fl">
+                <img src="img/t0105baa9b51a0ee4ed.jpg"/>
+                <div class="opa3"></div>
+                <p>2016</p>
+                <h5>西游记之三打白骨精</h5>
+                <span>最美白骨精巩俐斗法师徒四人</span>
+            </div>
+            <div class="new-opa-box2 mar-l fl">
+                <img src="img/t0105baa9b51a0ee4ed.jpg"/>
+                <div class="opa3"></div>
+                <p>2016</p>
+                <h5>西游记之三打白骨精</h5>
+                <span>最美白骨精巩俐斗法师徒四人</span>
+            </div>
+            <div class="new-opa-box2 mar-l fl">
+                <img src="img/t0105baa9b51a0ee4ed.jpg"/>
+                <div class="opa3"></div>
+                <p>2016</p>
+                <h5>西游记之三打白骨精</h5>
+                <span>最美白骨精巩俐斗法师徒四人</span>
+            </div>
+            <div class="new-opa-box2 mar-l fl">
+                <img src="img/t0105baa9b51a0ee4ed.jpg"/>
+                <div class="opa3"></div>
+                <p>2016</p>
+                <h5>西游记之三打白骨精</h5>
+                <span>最美白骨精巩俐斗法师徒四人</span>
+            </div>
+            <div class="new-opa-box2 mar-l fl">
+                <img src="img/t0105baa9b51a0ee4ed.jpg"/>
+                <div class="opa3"></div>
+                <p>2016</p>
+                <h5>西游记之三打白骨精</h5>
+                <span>最美白骨精巩俐斗法师徒四人</span>
+            </div>
+            <div class="new-opa-box2 mar-r mar-l fl">
+                <img src="img/t0105baa9b51a0ee4ed.jpg"/>
+                <div class="opa3"></div>
+                <p>2016</p>
+                <h5>西游记之三打白骨精</h5>
+                <span>最美白骨精巩俐斗法师徒四人</span>
+            </div>
+        </div>
+        <div class="top-l-b-con clearfix">
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t017c9e2523d3070507.jpg"/>
+                <div class="opa2"></div>
+                <span><img src="img/t0138f487291dbda896.png" /></span>
+                <p>魔形女维护人类对决天启</p>
+                <h5>X战警：天启</h5>
+            </div>
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t017c9e2523d3070507.jpg"/>
+                <div class="opa2"></div>
+                <span><img src="img/t0138f487291dbda896.png" /></span>
+                <p>魔形女维护人类对决天启</p>
+                <h5>X战警：天启</h5>
+            </div>
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t017c9e2523d3070507.jpg"/>
+                <div class="opa2"></div>
+                <span><img src="img/t0138f487291dbda896.png" /></span>
+                <p>魔形女维护人类对决天启</p>
+                <h5>X战警：天启</h5>
+            </div>
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t017c9e2523d3070507.jpg"/>
+                <div class="opa2"></div>
+                <span><img src="img/t0138f487291dbda896.png" /></span>
+                <p>魔形女维护人类对决天启</p>
+                <h5>X战警：天启</h5>
+            </div>
+            <div class="new-opa-box mar-l mar-r fl">
+                <img src="img/t017c9e2523d3070507.jpg"/>
+                <div class="opa2"></div>
+                <span><img src="img/t0138f487291dbda896.png" /></span>
+                <p>魔形女维护人类对决天启</p>
+                <h5>X战警：天启</h5>
+            </div>
+        </div>
+    </div>
+    <div class="tv-right fr">
+        <h4>电影分类榜</h4>
+        <div class="new-right-box">
+            <div class="new-btn clearfix" id="mv_btn">
+                <a href="javascript:;">喜剧</a>
+                <a href="javascript:;" class="active">动作</a>
+                <a href="javascript:;">爱情</a>
+                <a href="javascript:;">科幻</a>
+            </div>
+            <div class="new-con-box" id="mv_con">
+                <ul class="new-con" id="mv_con1">
+                    <li>
+                        <h3 class="new-con-tit bg-3 hide">
+                            <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img show">
+                            <img src="img/t010681fb3d30c2d048.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">澳门风云</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="new-con active"  id="mv_con2">
+                    <li>
+                        <h3 class="new-con-tit bg-3 hide">
+                            <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img show">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="new-con"   id="mv_con3">
+                    <li>
+                        <h3 class="new-con-tit bg-3 hide">
+                            <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img show">
+                            <img src="img/t010681fb3d30c2d048.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">澳门风云</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="new-con"   id="mv_con4">
+                    <li>
+                        <h3 class="new-con-tit bg-3 hide">
+                            <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img show">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h6 class="tv-right-tit">电影筛选<span>更多&gt;&gt;</span></h6>
+        <div class="tv-list">
+            <dl class="clearfix">
+                <dt><a href="javascript:;">类型</a></dt>
+                <dd><a href="javascript:;">军事</a></dd>
+                <dd><a href="javascript:;">古装</a></dd>
+                <dd><a href="javascript:;">谍战</a></dd>
+                <dd><a href="javascript:;">喜剧</a></dd>
+                <dd><a href="javascript:;">言情</a></dd>
+                <dd><a href="javascript:;">伦理</a></dd>
+                <dd><a href="javascript:;">都市</a></dd>
+                <dd><a href="javascript:;">警匪</a></dd>
+                <dd><a href="javascript:;">神话</a></dd>
+                <dd><a href="javascript:;">神话</a></dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href="javascript:;">地区</a></dt>
+                <dd><a href="javascript:;">内地</a></dd>
+                <dd><a href="javascript:;">香港</a></dd>
+                <dd><a href="javascript:;">韩国</a></dd>
+                <dd><a href="javascript:;">美国</a></dd>
+                <dd><a href="javascript:;">台湾</a></dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href="javascript:;">演员</a></dt>
+                <dd><a href="javascript:;">胡歌</a></dd>
+                <dd><a href="javascript:;">孙俪</a></dd>
+                <dd><a href="javascript:;">唐嫣</a></dd>
+                <dd><a href="javascript:;">杨幂</a></dd>
+                <dd><a href="javascript:;">王凯</a></dd>
+            </dl>
+        </div>
+        <h6 class="tv-right-tit">电影专题<span>更多&gt;&gt;</span></h6>
+        <div class="tv-list2 clearfix">
+            <img src="img/t016a824b48d29b7508.jpg" />
+        </div>
+    </div>
+</div>
+<!--电影 结束-->
+<!--综艺 开始-->
+    <div class="tv clearfix">
+    <div class="tv-left fl clearfix">
+        <div class="tv-tit zy-tit clearfix fl">
+            <h3 class="fl">百变综艺</h3>
+            <div class="tv-left-tit clearfix fl">
+                <a href="javascript">最新热播</a>
+                <span>/</span>
+                <a href="javascript">情感</a>
+                <span>/</span>
+                <a href="javascript">访谈</a>
+                <span>/</span>
+                <a href="javascript">搞笑</a>
+                <span>/</span>
+                <a href="javascript">更多&gt;&gt;</a>
+            </div>
+        </div>
+        <div class="new-box mar-l fl">
+            <img src="img/t0143fc780413b74948.jpg" />
+            <h6>90后女模三围逆天</h6>
+            <p>据本人透露“拒绝减肥才这样”</p>
+        </div>
+        <div class="new-opa-box mar-l fl">
+             <img src="img/t011c42715ed29a6799.jpg"/>
+             <div class="opa2"></div>
+             <p>其实她们只是在炫富！</p>
+             <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <div class="new-opa-box mar-l fl">
+            <img src="img/t011c42715ed29a6799.jpg"/>
+            <div class="opa2"></div>
+            <p>其实她们只是在炫富！</p>
+            <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <div class="new-opa-box mar-l mar-r fl">
+            <img src="img/t011c42715ed29a6799.jpg"/>
+            <div class="opa2"></div>
+            <p>其实她们只是在炫富！</p>
+            <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <div class="new-opa-box mar-l fl">
+            <img src="img/t011c42715ed29a6799.jpg"/>
+            <div class="opa2"></div>
+            <p>其实她们只是在炫富！</p>
+            <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <div class="new-opa-box mar-l fl">
+            <img src="img/t011c42715ed29a6799.jpg"/>
+            <div class="opa2"></div>
+            <p>其实她们只是在炫富！</p>
+            <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <div class="new-opa-box mar-l mar-r fl">
+            <img src="img/t011c42715ed29a6799.jpg"/>
+            <div class="opa2"></div>
+            <p>其实她们只是在炫富！</p>
+            <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <div class="new-opa-box mar-l fl">
+            <img src="img/t011c42715ed29a6799.jpg"/>
+            <div class="opa2"></div>
+            <p>其实她们只是在炫富！</p>
+            <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <div class="new-opa-box mar-l fl">
+            <img src="img/t011c42715ed29a6799.jpg"/>
+            <div class="opa2"></div>
+            <p>其实她们只是在炫富！</p>
+            <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <div class="new-opa-box mar-l fl">
+            <img src="img/t011c42715ed29a6799.jpg"/>
+            <div class="opa2"></div>
+            <p>其实她们只是在炫富！</p>
+            <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <div class="new-opa-box mar-l fl">
+            <img src="img/t011c42715ed29a6799.jpg"/>
+            <div class="opa2"></div>
+            <p>其实她们只是在炫富！</p>
+            <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <div class="new-opa-box mar-l mar-r fl">
+            <img src="img/t011c42715ed29a6799.jpg"/>
+            <div class="opa2"></div>
+            <p>其实她们只是在炫富！</p>
+            <h5>外媒吐槽A4腰I6腿</h5>
+        </div>
+        <h6 class="tv-right-tit zy-tit fl">娱乐八卦<span>更多&gt;&gt;</span></h6>
+        <div class="top-l-b-con clearfix fl">
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t017c9e2523d3070507.jpg"/>
+                <div class="opa2"></div>
+                <p>魔形女维护人类对决天启</p>
+                <h5>X战警：天启</h5>
+            </div>
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t017c9e2523d3070507.jpg"/>
+                <div class="opa2"></div>
+                <p>魔形女维护人类对决天启</p>
+                <h5>X战警：天启</h5>
+            </div>
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t017c9e2523d3070507.jpg"/>
+                <div class="opa2"></div>
+                <p>魔形女维护人类对决天启</p>
+                <h5>X战警：天启</h5>
+            </div>
+            <div class="new-opa-box mar-l fl">
+                <img src="img/t017c9e2523d3070507.jpg"/>
+                <div class="opa2"></div>
+                <p>魔形女维护人类对决天启</p>
+                <h5>X战警：天启</h5>
+            </div>
+            <div class="new-opa-box mar-l mar-r fl">
+                <img src="img/t017c9e2523d3070507.jpg"/>
+                <div class="opa2"></div>
+                <p>魔形女维护人类对决天启</p>
+                <h5>X战警：天启</h5>
+            </div>
+        </div>
+    </div>
+    <div class="tv-right fr">
+        <h4>精彩推荐</h4>
+        <div class="new-right-box">
+            <div class="new-btn clearfix" id="mv_btn">
+                <a href="javascript:;">喜剧</a>
+                <a href="javascript:;" class="active">动作</a>
+                <a href="javascript:;">爱情</a>
+                <a href="javascript:;">科幻</a>
+            </div>
+            <div class="new-con-box" id="mv_con">
+                <ul class="new-con" id="mv_con1">
+                    <li>
+                        <h3 class="new-con-tit bg-3 hide">
+                            <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img show">
+                            <img src="img/t010681fb3d30c2d048.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">澳门风云</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="new-con active"  id="mv_con2">
+                    <li>
+                        <h3 class="new-con-tit bg-3 hide">
+                            <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img show">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="new-con"   id="mv_con3">
+                    <li>
+                        <h3 class="new-con-tit bg-3 hide">
+                            <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img show">
+                            <img src="img/t010681fb3d30c2d048.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">澳门风云</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="new-con"   id="mv_con4">
+                    <li>
+                        <h3 class="new-con-tit bg-3 hide">
+                            <span class="fl">1</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img show">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">2</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">2</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">3</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">4</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">5</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">6</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">7</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">8</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit bg-3">
+                            <span class="fl">9</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3 class="new-con-tit">
+                            <span class="fl">10</span><b class="fl">太阳的后裔</b><i class="fr">242.2万</i>
+                        </h3>
+                        <a href="javascript:;" class="new-con-img">
+                            <img src="img/t016b712d026082e57a.jpg" />
+                            <div class="opa3"></div>
+                            <p><em class="fl">1</em><b class="fl">太阳的后裔</b><i class="fr">242.2万</i></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h6 class="tv-right-tit">娱乐风云榜<span>更多&gt;&gt;</span></h6>
+        <div class="tv-list">
+            <dl class="clearfix">
+                <dt><a href="javascript:;">类型</a></dt>
+                <dd><a href="javascript:;">军事</a></dd>
+                <dd><a href="javascript:;">古装</a></dd>
+                <dd><a href="javascript:;">谍战</a></dd>
+                <dd><a href="javascript:;">喜剧</a></dd>
+                <dd><a href="javascript:;">言情</a></dd>
+                <dd><a href="javascript:;">伦理</a></dd>
+                <dd><a href="javascript:;">都市</a></dd>
+                <dd><a href="javascript:;">警匪</a></dd>
+                <dd><a href="javascript:;">神话</a></dd>
+                <dd><a href="javascript:;">神话</a></dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href="javascript:;">地区</a></dt>
+                <dd><a href="javascript:;">内地</a></dd>
+                <dd><a href="javascript:;">香港</a></dd>
+                <dd><a href="javascript:;">韩国</a></dd>
+                <dd><a href="javascript:;">美国</a></dd>
+                <dd><a href="javascript:;">台湾</a></dd>
+            </dl>
+            <dl class="clearfix">
+                <dt><a href="javascript:;">演员</a></dt>
+                <dd><a href="javascript:;">胡歌</a></dd>
+                <dd><a href="javascript:;">孙俪</a></dd>
+                <dd><a href="javascript:;">唐嫣</a></dd>
+                <dd><a href="javascript:;">杨幂</a></dd>
+                <dd><a href="javascript:;">王凯</a></dd>
+            </dl>
+        </div>
+        <h6 class="tv-right-tit">电影专题<span>更多&gt;&gt;</span></h6>
+        <div class="tv-list2 clearfix">
+            <img src="img/t016a824b48d29b7508.jpg" />
+        </div>
+    </div>
+</div>
+<!--综艺 结束-->
+</body>
+</html>

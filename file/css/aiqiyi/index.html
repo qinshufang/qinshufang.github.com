@@ -1,0 +1,1473 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link href="css/base.css" rel="stylesheet" />
+<link href="css/style.css" rel="stylesheet" />
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+$(function(){
+	var aBtn=$('#btn li');
+	var aBanner=$('#banner li');
+	aBtn.mouseover(function(){
+		aBtn.removeClass('active');		
+		$(this).addClass('active');
+		aBanner.stop().animate({'opacity':'0'},500);
+		$('#banner li').eq($(this).index()).stop().animate({'opacity':'1'},500);
+	});
+});
+</script>
+</head>
+
+<body>
+	<div class="header-wrap">
+    	<ul class="banner" id="banner">
+        	<li><a href="###"><img src="img/bg5.jpg" /></a></li>
+            <li><a href="###"><img src="img/bg0.jpg" /></a></li>
+            <li><a href="###"><img src="img/bg2.jpg" /></a></li>
+            <li><a href="###"><img src="img/bg4.jpg" /></a></li>
+            <li class="show"><a href="###"><img src="img/bg3.jpg" /></a></li>
+            <li><a href="###"><img src="img/bg1.jpg" /></a></li>
+            <li><a href="###"><img src="img/bg8.jpg" /></a></li>
+            <li><a href="###"><img src="img/bg7.jpg" /></a></li>
+            <li><a href="###"><img src="img/bg6.jpg" /></a></li>
+            <li><a href="###"><img src="img/bg9.jpg" /></a></li>
+        </ul>
+        <div class="header">
+        	<ul class="btn" id="btn">
+            	<li><a href="###">北上广不相信眼泪：职场迷情</a></li>
+                <li><a href="###">跑男：物资保卫战上演激烈对抗</a></li>
+                <li><a href="###">灵魂摆渡2：马克杨紫再续前缘</a></li>
+                <li><a href="###">奚梦瑶何穗翅膀首演抢镜维秘秀</a></li>
+                <li class="active"><a href="###">超模2：MissJ大战鬼马谢依霖</a></li>
+                <li><a href="###">大秧歌：杨紫刘芊含争抢杨志刚</a></li>
+                <li><a href="###">爱大片：单身人士N种自嗨指南</a></li>
+                <li><a href="###">《007：幽灵党》伦敦首映</a></li>
+                <li><a href="###">歌神啊：何炅谢娜独家采访</a></li>
+                <li><a href="###">苏宁双11 何止5折 现在开抢</a></li> 
+            </ul>
+            <div class="search clearfix">
+                <input type="text" placeholder="大好时光" class="text fl" />
+                <a href="###" class="button fl"></a>
+            </div>
+            <ul class="topnav">
+            	<li class="one"><a href="###">登录</a></li>
+                <li class="two"><a href="###">注册</a></li>
+                <li class="three"><a href="###">开通VIP</a></li>
+                <li class="four"><a href="###"><span></span></a><a href="###" class="con">上传</a><a href="###"><i></i></a><a href="###"><em></em></a></li>
+                <li class="five"><a href="###">下载</a><a href="###"><em></em></a></li>
+                <li class="six"><a href="###">消息</a><a href="###"><i></i></a></li>
+                <li class="seven"><a href="###">播放记录</a><a href="###"><i></i></a></li>
+            </ul>
+        </div>
+        <div class="mainnav clearfix">
+        	<ul class="box-1 clearfix fl">
+            	<li class="nav-1 fl">
+                    <a href="###" class="top"><img src="img/logo108x35_black.png" /></a>
+                    <a href="###"><img src="img/logoyxpz_new.png" /></a>
+                </li>
+                <li class="nav-2 fr">
+                	<a href="###">娱乐</a>
+                    <a href="###">体育</a>
+                    <a href="###">资讯</a>
+                </li>
+            </ul>
+            <ul class="box-2 clearfix fl">
+            	<li class="nav-1 fl">
+                    <a href="###">电视剧</a>
+                    <a href="###">综艺</a>
+                    <a href="###">脱口秀</a>
+                </li>
+                <li class="nav-2 fr">                	
+                    <a href="###">电影</a>
+                    <a href="###">片花</a>
+                    <a href="###">微电影</a>
+                </li>
+            </ul>
+            <ul class="box-3 clearfix fl">
+            	<li class="nav-1 fl">
+                    <a href="###">动漫</a>
+                    <a href="###">少儿</a>
+                    <a href="###">游戏</a>
+                </li>
+                <li class="nav-2 fr">                	
+                    <a href="###">生活</a>
+                    <a href="###">母婴</a>
+                    <a href="###">健康</a>
+                </li>
+            </ul>
+            <ul class="box-4 clearfix fl">
+            	<li class="nav-1 fl">
+                    <a href="###">音乐</a>
+                    <a href="###">时尚</a>
+                    <a href="###">旅游</a>
+                </li>
+                <li class="nav-2 fr">                	
+                    <a href="###">搞笑</a>
+                    <a href="###">原创</a>
+                    <a href="###">拍客</a>
+                </li>
+            </ul>
+            <ul class="box-5 clearfix fl">
+            	<li class="nav-1 fl">
+                    <a href="###">财经</a>
+                    <a href="###">科技</a>
+                    <a href="###">汽车</a>
+                </li>
+                <li class="nav-2 fr">                	
+                    <a href="###">军事</a>
+                    <a href="###">教育</a>
+                    <a href="###">纪录片</a>
+                </li>
+            </ul>
+            <ul class="box-6 clearfix fl">
+            	<li class="nav-1 fl">
+                    <a href="###">风云榜</a>
+                    <a href="###">全网影视</a>
+                    <a href="###">爱奇艺搜索</a>
+                </li>
+                <li class="nav-2 fr">                	
+                    <a href="###">公益</a>
+                    <a href="###">直播中心</a>
+                    <a href="###">爱奇艺出品</a>
+                </li>
+            </ul>
+             <ul class="box-7 clearfix fl">
+            	<li class="nav-1 fl">
+                    <a href="###">PPS游戏</a>
+                    <a href="###">应用商店</a>
+                    <a href="###"class="special">爱奇艺商城<em></em></a>
+                </li>
+                <li class="nav-2 fr">                	
+                    <a href="###">PPS奇秀</a>
+                    <a href="###"><i>VIP</i>会员</a>
+                    <a href="###" class="special">个人中心<em></em></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--header end-->
+    <div class="con1-wrap clearfix">
+    	<div class="box1 fl">
+        	<h5 class="clearfix">
+            	<strong class="fl"><a href="###">今日焦点</a></strong>
+                <span class="fl"><a href="###">更多&gt;</a></span>
+                <i class="fr clearfix"><em class="fl"></em><a href="###" class="fl">独播</a></i>
+            </h5>
+            <dl>
+                <dt><a href="###">北京市委副书记吕锡文涉严重违纪被查</a></dt>
+                <dd class="clearfix"><span></span><a href="###">12306推双验证防身份抢注</a> <a href="###">埃及金字塔现诡异温差</a></dd>
+                <dd class="clearfix"><span></span><a href="###">巴基斯坦向中国出租瓜达尔港 或成重要军事基地</a></dd>
+                <dd class="clearfix"><span></span><a href="###">高校光棍节禁情侣喂饭</a> <a href="###">女子因鸭子暴毙骂死邻居</a></dd>
+                <dd class="clearfix"><span></span><a href="###">女子重488斤成中国第一胖 曾一顿吃掉100个肉串</a></dd>
+                <dd class="clearfix"><span></span><a href="###">小伙学穿越剧拆ATM偷钱</a> <a href="###">男子坐购物车兜风丧命</a></dd>
+                <dd class="clearfix"><span></span><a href="###">男子滚下百米雪峰奇迹生还</a> <a href="###">老汉偷车扛起来就跑</a></dd>
+            </dl>
+            <div class="box1-pic clearfix">
+            	<div class="box1-l fl">
+                	<img src="img/con1_03.jpg" />
+                    <p>任性赛车断两截后如常行驶</p>
+                </div>
+                <div class="box1-r fr">
+                	<img src="img/con1_05.jpg" />
+                    <p>半裸男爬高压塔被电晕悬空</p>
+                </div>
+            </div>
+        </div>
+        <div class="box2 fl">
+        	<div class="box2-pic">
+                <img src="img/bb7ed40d89b24a3e8a80dc02c26ba895.jpg" />
+                <div class="opabox">
+                    <div class="opa"></div>
+                    <p><span></span>超能大星探：乔任梁当街把妹 同回酒店过夜</p>
+                </div>
+            </div>
+            <dl>
+                <dd class="clearfix"><span></span><a href="###">《大牌对王牌》本周五早8点:蒋劲夫率爷们班夺冠</a></dd>
+                <dd class="clearfix"><span></span><a href="###">MAMA：BTS独家问候粉丝</a><a href="###">周渝民求婚过程曝光</a></dd>
+                <dd class="clearfix"><span></span><a href="###">杨幂穿旗袍录《跑男3》</a> <a href="###">快男王栎鑫得女当爸爸</a></dd>
+                <dd class="clearfix"><span></span><a href="###">韩庚MV写安庆故事</a> <a href="###">王凯美手KO老干部霍建华</a></dd>
+                <dd class="clearfix"><span></span><a href="###">戳这里领双11千万优惠券</a> <a href="###">易迅11.11狂欢盛宴</a></dd>
+            </dl>
+        </div>
+        <div class="box3 fl">
+        		<div class="box3-t">
+                	<img src="img/box3_03.jpg" />
+                    <p>女神蔡妍为众鲜肉贴心擦汗</p>
+                </div>
+                <div class="box3-c">
+                	<img src="img/box3_06.jpg" />
+                    <p>最好吃的饭：妈妈的味道</p>
+                </div>
+                <div class="box3-b">
+                	<img src="img/box3_08.jpg" />
+                    <p>小S被逼大喊黄子佼</p>
+                </div>
+        </div>
+    </div>
+    <!--con1-wrap end-->
+    <div class="con2-wrap clearfix">
+    	<div class="box1 fl">
+        	<h5 class="clearfix">
+            	<strong class="fl clearfix">
+                    <em class="fl"></em>
+                    <a href="###" class="fl">综艺</a>
+                </strong>
+                <span class="fl">
+                	<a href="###">更多&gt;</a>
+                </span>
+                <p class="fl clearfix">
+                    <a href="###" class="one">爱上超模第2季</a>
+                    <a href="###" class="two">晓松奇谈</a>
+                    <a href="###" class="three">大牌对王牌</a>
+                    <a href="###" class="four">流行之王</a>
+                </p>
+                <a href="###"><img src="img/chious_02.png" class="fr"/></a>
+                <a href="###"><img src="img/erke_01.png" / class="fr"></a>
+            </h5>
+            <div class="box1-con clearfix">
+            	<div class="fl">
+                	<a href="###"><img src="img/1_11.jpg" /></a>
+                    <a href="###"><p>非首脑会谈<br />
+                    <i>各国富二代奢侈生活大揭秘 意大利天价停车费惊呆众人</i></p></a>
+                </div>
+                <ul class="fl clearfix">
+                	<li class="special1">
+                        <a href="###"><img src="img/1_13.jpg" /></a>
+                        <a href="###"><p>流行之王<br />
+                        <i>李政军《怯》致敬宋闵浩</i></p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/1_19.jpg" /></a>
+                        <a href="###"><p>美丽俏佳人<br />
+                        <i>美丽创新力 互联网风尚大典</i>></p></a>
+                    </li>
+                </ul>
+                <ul class="fr clearfix">
+                    <li class="special1">
+                        <a href="###"><img src="img/1_15.jpg" /></a>
+                       <a href="###"> <p>爱上超模<br />
+                       <i>赵家彤撞上Grace Jones</i></p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/1_22.jpg" /></a>
+                        <a href="###"><p>综艺大嘴巴<br />
+                       <i>“楼诚”还原风衣经典桥段</i></p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        	<div class="box1-r fr">
+             	<h5 class="clearfix">
+                    <strong class="fl clearfix">
+                        <em class="fl"></em>
+                        <a href="###" class="fl">精彩推荐</a>
+                    </strong>
+                    <span class="fl">
+                        <a href="###">更多&gt;</a>
+                    </span>
+                </h5>
+                <div>
+                	<a href="###"><img src="img/1_17.jpg" /></a>
+                    <a href="###"><p>光棍节恩爱秀多了也会腻</p></a>
+                </div>
+                <ul>
+                	<li class="first"><a href="###">乔振宇跳中年迪斯科</a></li>
+                    <li><a href="###">EXO伯贤自爆“无喉结”</a></li>
+                    <li><a href="###">钟汉良的《普通人》</a></li>
+                    <li><a href="###">钟汉良的《普通人</a></li>
+                    <li><a href="###">奚梦瑶走维秘极致性感</a></li>
+                </ul>
+             </div>
+    </div>
+    <!--综艺end-->
+    <div class="running">
+             	<h5 class="clearfix">
+                    <strong class="fl"><a href="###">奔跑吧兄弟第三季</a></strong>
+                    <em class="fl"><a href="###">独播</a></em>
+                    <span class="fl"><a href="###">进入专题&gt;</a></span>
+                </h5>
+                <ul>
+                	<li>
+                        <a href="###"><img src="img/5_03.jpg" /></a>
+                        <a href="###" class="clearfix"><i><span>正片回顾</span>邓超李晨互黑笑翻众人</i></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/5_05.jpg" /></a>
+                        <a href="###" class="clearfix"><i><span>自制节目</span>前方高能！路人答跑男烧脑题</i></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/5_07.jpg" /></a>
+                        <a href="###" class="clearfix"><i><span>精彩片段</span>邓超再现《甜蜜蜜》经典场景</i></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/5_09.jpg" /></a>
+                        <a href="###" class="clearfix"><i><span>未播花絮</span>祖蓝宋佳宿敌再聚首</i></a>
+                    </li>
+                    <li class="last">
+                        <a href="###"><img src="img/5_11.jpg" /></a>
+                        <a href="###" class="clearfix"><i><span>新闻速递</span>跑男做公益AB女汉子上身</i></a>
+                    </li>
+                </ul>
+        </div>
+        <!--running man end-->
+        <div class="show">
+             	<h5 class="clearfix">
+                    <strong class="fl"><a href="###">脱口秀</a></strong>
+                    <span class="fl"><a href="###">更多&gt;</a></span>
+                </h5>
+                <ul>
+                	<li>
+                        <a href="###"><img src="img/5_18.jpg" /></a>
+                        <a href="###"><p>康熙来了<br />
+                       <i>小S叫停录音当场落泪</i></p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/5_19.jpg" /></a>
+                        <a href="###"><p>晓松奇谈<br />
+                       <i>纳尼？张勋闹复辟梅兰芳捧场</i></p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/5_20.jpg" /></a>
+                        <a href="###"><p>时尚江湖<br />
+                       <i>刘青云：我专注演警探二十年</i></p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/5_21.jpg" /></a>
+                        <a href="###"><p>今晚80后脱口秀<br />
+                       <i>女人为双十一禁欲一个月</i></p></a>
+                    </li>
+                    <li class="last">
+                        <a href="###"><img src="img/5_22.jpg" /></a>
+                        <a href="###"><p>非常静距离<br />
+                       <i>孙骁骁为李响庆祝生日</i></p></a>
+                    </li>
+                </ul>
+        </div>
+        <!--show end-->
+        <div class="banner1">
+        	<a href="###"><img src="img/banner1.jpg" /></a>
+        </div>
+        <!--banner1 end-->
+        <div class="yl-wrap">
+        	<h5 class="clearfix">
+            	<strong class="fl clearfix">
+                    <em class="fl"></em>
+                    <a href="###" class="fl">娱乐</a>
+                </strong>
+                <span class="fl">
+                	<a href="###">更多&gt;</a>
+                </span>
+                <p class="fl clearfix">
+                    <a href="###" class="one">大牌对王牌</a>
+                    <a href="###" class="two">爱奇艺早班机</a>
+                    <a href="###" class="three">超能大星探</a>
+                    <a href="###" class="four">帕帕帮</a>
+                    <a href="###" class="five">泡菜帮</a>
+                    <a href="###" class="six">娱乐猛回头</a>
+                </p>
+                <a href="###"><img src="img/video-safe.png" class="fr"/></a>
+            </h5>
+            <div class="yl-con clearfix">
+            	<div class="fl">
+                	<a href="###"><img src="img/6_28.jpg" /></a>
+                    <a href="###"><p>李小璐跪地为甜馨扎小辫 贾乃亮熊抱女儿<br />
+                    <i>日前，夫妻两人带着甜馨忙里偷闲回京小歇几日。当天，夫妻两人...</i></p></a>
+                </div>
+                <ul class="fl clearfix">
+                	<li class="special1">
+                        <a href="###"><img src="img/6_29.jpg" /></a>
+                        <a href="###"><p>《大牌对王牌》曝最新预告蒋劲夫帮爷们班夺冠</p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/6_30.jpg" /></a>
+                        <a href="###"><p>跑男3南京录制王宝强回归成员穿银色战衣</p></a>
+                    </li>
+                </ul>
+                <ul class="fl clearfix">
+                    <li class="special1">
+                        <a href="###"><img src="img/6_31.jpg" /></a>
+                       <a href="###"> <p>电视剧《幻城》曝最新剧照冯绍峰宋茜深情对望</p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/6_35.jpg" /></a>
+                        <a href="###"><p>王菲素颜与友人亲密自拍休闲装扮坐姿霸气</p></a>
+                    </li>
+                </ul>
+                <ul class="fr clearfix">
+                    <li class="special1">
+                        <a href="###"><img src="img/6_36.jpg" /></a>
+                       <a href="###"> <p>爱奇艺全球人气奖投票火热进行中 最新榜单</p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/6_37.jpg" /></a>
+                        <a href="###"><p>全场回顾：王源生日会</p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--yl-wrap end-->
+        <div class="mulove-wrap">
+        	<h5 class="clearfix">
+            	<strong class="fl clearfix">
+                    <em class="fl"></em>
+                    <a href="###" class="fl">猜你喜欢</a>
+                </strong>
+                <span class="fl">
+                	<a href="###">更多&gt;</a>
+                </span>
+                <p class="fl clearfix">
+                    <a href="###" class="one">我的播放记录</a>
+                    <a href="###" class="two">我的收藏</a>
+                    <a href="###" class="three">我的上传</a>
+                </p>
+            </h5>
+            <div class="mulove-con clearfix">
+                <ul class="fl clearfix">
+                	<li class="special1">
+                        <a href="###"><img src="img/7_42.jpg" /></a>
+                        <a href="###"><p>蜀山战纪第1季<br />
+                       <i>赵丽颖陈伟霆虐恋情深</i></p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/7_53.jpg" /></a>
+                        <a href="###"><p>叮咚味你好<br />
+                       <i>隐秘镜头下韩国超模夫妇</i></p></a>
+                    </li>
+                </ul>
+                <ul class="fl clearfix">
+                	<li class="special1">
+                        <a href="###"><img src="img/7_44.jpg" /></a>
+                        <a href="###"><p>城管队长被当街砍死</p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/7_54.jpg" /></a>
+                        <a href="###"><p>欢乐囧图精选集<br />
+                       <i>笑尿！脑残妹子作死花样多</i></p></a>
+                    </li>
+                </ul>
+                <ul class="fl clearfix">
+                    <li class="special1">
+                        <a href="###"><img src="img/7_45.jpg" /></a>
+                       <a href="###"><p>飞碟冷知识<br />
+                       <i>羞羞！鸳鸯浴的N种洗法</i></p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/7_55.jpg" /></a>
+                        <a href="###"><p>情剑<br />
+                       <i>谢霆锋阿娇聚首大荧幕</i></p></a>
+                    </li>
+                </ul>
+                <ul class="fl clearfix">
+                	<li class="special1">
+                        <a href="###"><img src="img/7_46.jpg" /></a>
+                        <a href="###"><p>摧绵大湿搞笑盘点<br />
+                       <i>二货妹纸扒裤大集锦</i></p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/7_56.jpg" /></a>
+                        <a href="###"><p>野山鹰<br />
+                       <i>女汉子的传奇抗战生涯</i></p></a>
+                    </li>
+                </ul>
+                <ul class="last fr clearfix">
+                    <li class="special1">
+                        <a href="###"><img src="img/7_47.jpg" /></a>
+                       <a href="###"><p>女子7年网购13万误买房</p></a>
+                    </li>
+                    <li class="special2">
+                        <a href="###">进入个人中心&gt;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--mulove end-->
+        <div class="tg-banner1">
+        	<div class="tg-tit">推广广告</div>
+            <div class="tg-con clearfix">
+            	<span></span>
+                <ul class="clearfix fl">
+                	<li><a href="###"><img src="img/tg-1.jpg" /></a></li>
+                    <li><a href="###"><img src="img/tg-1.jpg" /></a></li>
+                    <li><a href="###"><img src="img/tg-1.jpg" /></a></li>
+                    <li><a href="###"><img src="img/tg-1.jpg" /></a></li>
+                    <li class="last"><a href="###"><img src="img/tg-1.jpg" /></a></li>
+                </ul>
+                <em></em>
+            </div>
+        </div>
+        <!--tg-banner1 end-->
+        <div class="movies-wrap clearfix">
+                    <div class="movies-l fl">
+                        <h5 class="clearfix">
+                            <strong class="fl">
+                                <em class="fl"></em>
+                                 <a href="###" class="fl">电影</a>
+                             </strong>
+                            <span class="fl"><a href="###">更多&gt;</a></span>
+                            <p class="fl clearfix">
+                                <a href="###" class="one">爱奇艺爱电影</a>
+                                <a href="###" class="two">网络大电影</a>
+                                <a href="###" class="three">VIP会员</a>
+                                <a href="###" class="four">爱大片：单身人士N种自嗨指南</a>
+                            </p>
+                        </h5>
+                        <ul class="fl clearfix">
+                                <li class="special1">
+                                    <a href="###"><img src="img/8_61.jpg" /></a>
+                                    <a href="###"><p>前任2备胎反击战<br />
+                                   <i>重口味喜剧笑到没朋友</i></p></a>
+                                </li>
+                                <li>
+                                    <a href="###"><img src="img/8_62.jpg" /></a>
+                                    <a href="###"><p>道士下山<br />
+                                   <i>陈凯歌以武载道话奇观</i></p></a>
+                                </li>
+                            </ul>
+                            <ul class="fl clearfix">
+                                <li class="special1">
+                                    <a href="###"><img src="img/8_63.jpg" /></a>
+                                    <a href="###"><p>情剑<br />
+                                   <i>谢霆锋阿娇聚首大荧幕</i></p></a>
+                                </li>
+                                <li>
+                                    <a href="###"><img src="img/8_64.jpg" /></a>
+                                    <a href="###"><p>我是路人甲<br />
+                                   <i>尔冬升小人物情怀力作</i></p></a>
+                                </li>
+                            </ul>
+                            <ul class="fl clearfix">
+                                <li class="special1">
+                                    <a href="###"><img src="img/8_69.jpg" /></a>
+                                    <a href="###"><p>山炮进城<br />
+                                   <i>赵家班首部网络大电影</i></p></a>
+                                </li>
+                                <li>
+                                    <a href="###"><img src="img/8_70.jpg" /></a>
+                                    <a href="###"><p>斗地主<br />
+                                   <i>买红妹潘长江爆笑斗法</i></p></a>
+                                </li>
+                            </ul>
+                            <ul class=" last fl clearfix">
+                                <li class="special1">
+                                    <a href="###"><img src="img/8_71.jpg" /></a>
+                                    <a href="###"><p>奔跑吧有情人<br />
+                                   <i>郑恺银幕处女作</i></p></a>
+                                </li>
+                                <li>
+                                    <a href="###"><img src="img/8_72.jpg" /></a>
+                                    <a href="###"><p>第三种爱情<br />
+                                   <i>刘亦菲宋承宪定情之作</i></p></a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="movies-r fl">
+                        <h5 class="clearfix">
+                            <strong class="fl">
+                                <em class="fl"></em>
+                                 <a href="###" class="fl">电影榜</a>
+                             </strong>
+                            <span class="fl"><a href="###">更多&gt;</a></span>
+                        </h5>
+                        <ul class="fl clearfix">
+                                <li class="special3">
+                                	<ul>
+                                    	<li class="clearfix"><span>1</span><b>道士下山</b><i></i></li>
+                                        <li class="clearfix"><span>2</span><b>山炮进城</b><i></i></li>
+                                        <li class="clearfix"><span>3</span><b>斗地主</b><i class="icon2"></i></li>
+                                        <li class="clearfix"><span class="bg2">4</span><b>坏姐姐之拆婚联盟</b><i class="icon3"></i></li>
+                                        <li class="clearfix"><span class="bg2">5</span><b>我是路人甲</b><i></i></li>
+                                        <li class="clearfix"><span class="bg2">6</span><b>移动迷宫</b><i></i></li>
+                                        <li class="clearfix"><span class="bg2">7</span><b>第三种爱情</b><i></i></li>
+                                        <li class="clearfix"><span class="bg2">8</span><b>煎饼侠</b><i></i></li>
+                                        <li class="clearfix"><span class="bg2">9</span><b>烈日灼心</b><i></i></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="###"><img src="img/8_73.jpg" /></a>
+                                    <a href="###"><p>捉妖记<br />
+                                   <i>萌笑点齐飞的奇幻巨作</i></p></a>
+                                </li>
+                            </ul>
+                        </div>                        
+        </div>
+        <!--movies end-->
+        <div class="wdyph clearfix">
+                <div class="wdy fl">
+                    <h5 class="clearfix">
+                        <strong class="fl">
+                            <a href="###">微电影</a>
+                        </strong>
+                        <span class="fl">
+                            <a href="###">更多&gt;</a>
+                        </span>
+                        <p class="fl clearfix">
+                            <a href="###" class="one">第二届深圳国际微电影节</a>
+                            <a href="###" class="two">中国梦365个故事</a>
+                        </p>                
+                    </h5>
+                    <ul class=" wdy-con clearfix">
+                        <li class="fl">
+                            <a href="###"><img src="img/8_79.jpg" /></a>
+                            <a href="###"><p>史上卡司最豪华短片</p></a>
+                        </li>
+                        <li class="second fl">
+                            <a href="###"><img src="img/8_80.jpg" /></a>
+                            <a href="###"><p>落难父女的救赎之路</p></a>
+                        </li>
+                        <li class="fl">
+                            <a href="###"><img src="img/8_81.jpg" /></a>
+                            <a href="###"><p>冒险穷三代刺激毁一生</p></a>
+                        </li>                
+                    </ul>
+                </div>
+                <div class="ph fl">
+                    <h5 class="clearfix">
+                        <strong class="fl">
+                            <a href="###">片花</a>
+                        </strong>
+                        <span class="fl">
+                            <a href="###">更多&gt;</a>
+                        </span>
+                        <p class="fl clearfix">
+                            <a href="###" class="one">007系列回顾</a>
+                            <a href="###" class="two">11月院线观影指南</a>
+                        </p>                
+                    </h5>
+                    <ul class="ph-con clearfix">
+                        <li class="fl">
+                            <a href="###"><img src="img/8_82.jpg" /></a>
+                            <a href="###"><p>万万：甜馨父女唱片尾曲</p></a>
+                        </li>
+                        <li class="last fl">
+                            <a href="###"><img src="img/8_83.jpg" /></a>
+                            <a href="###"><p>落难父女的救赎之路</p></a>
+                        </li>                                     
+                    </ul>
+                </div>                
+            </div>
+            <!--wdyph end-->
+            <div class="dsj-wrap clearfix">
+                    <div class="dsj-l fl">
+                        <h5 class="clearfix">
+                            <strong class="fl">
+                                <em class="fl"></em>
+                                 <a href="###" class="fl">电视剧</a>
+                             </strong>
+                            <span class="fl"><a href="###">更多&gt;</a></span>
+                            <p class="fl clearfix">
+                                <a href="###" class="one">内地</a>
+                                <a href="###" class="two">韩剧</a>
+                                <a href="###" class="three">日剧</a>
+                                <a href="###" class="four">美剧</a>
+                                <a href="###" class="five">自制剧</a>
+                            </p>
+                        </h5>
+                        <ul class="fl clearfix">
+                                <li class="special1">
+                                    <a href="###"><img src="img/8_89.jpg" /></a>
+                                    <a href="###"><p>北上广不相信眼泪</p></a>
+                                </li>
+                                <li>
+                                    <a href="###"><img src="img/8_90.jpg" /></a>
+                                    <a href="###"><p>灵魂摆渡2</p></a>
+                                </li>
+                            </ul>
+                            <ul class="fl clearfix">
+                                <li class="special1">
+                                    <a href="###"><img src="img/8_91.jpg" /></a>
+                                    <a href="###"><p>大秧歌</p></a>
+                                </li>
+                                <li>
+                                    <a href="###"><img src="img/8_92.jpg" /></a>
+                                    <a href="###"><p>大汉情缘之云中歌</p></a>
+                                </li>
+                            </ul>
+                            <ul class="fl clearfix">
+                                <li class="special1">
+                                    <a href="###"><img src="img/8_97.jpg" /></a>
+                                    <a href="###"><p>蜀山战纪第2季</p></a>
+                                </li>
+                                <li>
+                                    <a href="###"><img src="img/8_98.jpg" /></a>
+                                    <a href="###"><p>反恐特战队</p></a>
+                                </li>
+                            </ul>
+                            <ul class=" last fl clearfix">
+                                <li class="special1">
+                                    <a href="###"><img src="img/8_99.jpg" /></a>
+                                    <a href="###"><p>新济公活佛下部</p></a>
+                                </li>
+                                <li>
+                                    <a href="###"><img src="img/8_100.jpg" /></a>
+                                    <a href="###"><p>野山鹰</p></a>
+                                </li>
+                            </ul>
+                    </div>
+                    <div class="dsj-r fl">
+                        <h5 class="clearfix">
+                            <strong class="fl">
+                                <em class="fl"></em>
+                                 <a href="###" class="fl">电视剧榜</a>
+                             </strong>
+                            <span class="fl"><a href="###">更多&gt;</a></span>
+                        </h5>
+                        <ul class="fl clearfix">
+                                <li class="special3">
+                                	<ul>
+                                    	<li class="clearfix"><span>1</span><b>大汉情缘之云中歌</b><i class="icon2"></i></li>
+                                        <li class="clearfix"><span>2</span><b>反恐特战队</b><i class="icon2"></i></li>
+                                        <li class="clearfix"><span>3</span><b>大秧歌</b><i class="icon2"></i></li>
+                                        <li class="clearfix"><span class="bg2">4</span><b>大好时光</b><i class="icon3"></i></li>
+                                        <li class="clearfix"><span class="bg2">5</span><b>琅琊榜</b><i></i></li>
+                                        <li class="clearfix"><span class="bg2">6</span><b>北上广不相信眼泪</b><i></i></li>
+                                        <li class="clearfix"><span class="bg2">7</span><b>灵魂摆渡2</b><i></i></li>
+                                        <li class="last clearfix"><span class="bg2">8</span><b>野山鹰</b><i></i></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="###"><img src="img/8_101.jpg" /></a>
+                                    <a href="###"><p>神剧亮了：PPT溜粉特辑</p></a>
+                                </li>
+                            </ul>
+                        </div>                        
+        </div>
+        <!--dsj end-->
+        <div class="tg-banner2">
+        	<div class="tg-tit">推广广告</div>
+            <div class="tg-con clearfix">
+            	<span></span>
+                <ul class="clearfix fl">
+                	<li><a href="###"><img src="img/tg-2.jpg" /></a></li>
+                    <li><a href="###"><img src="img/tg-2.jpg" /></a></li>
+                    <li><a href="###"><img src="img/tg-2.jpg" /></a></li>
+                    <li><a href="###"><img src="img/tg-2.jpg" /></a></li>
+                    <li class="last"><a href="###"><img src="img/tg-2.jpg" /></a></li>
+                </ul>
+                <em></em>
+            </div>
+        </div>
+        <!--tg-banner2 end-->
+        <div class="dmsejy clearfix">
+                <div class="dm-wrap fl">
+                    <h5 class="clearfix">
+                        <strong class="fl clearfix">
+                            <em class="fl"></em>
+                            <a href="###" class="fl">动漫</a>
+                        </strong>
+                        <span class="fl">
+                            <a href="###">更多&gt;</a>
+                        </span>
+                        <p class="fl clearfix">
+                            <a href="###" class="one">真人特辑</a>
+                            <a href="###" class="two">动画电影</a>
+                        </p>
+                    </h5>
+                    <div class="dm-con clearfix">
+                        <div class="fl">
+                            <a href="###"><img src="img/9_107.jpg" /></a>
+                            <a href="###"><p>航海王</p></a>
+                        </div>
+                        <ul class="fl clearfix">
+                            <li class="special1">
+                                <a href="###"><img src="img/9_108.jpg" /></a>
+                                <a href="###"><p>小巴林</p></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="img/9_115.jpg" /></a>
+                                <a href="###"><p>精灵梦叶罗丽 第3部</p></a>
+                            </li>
+                        </ul>                
+                    </div>
+                </div>
+                <div class="se-wrap fl">
+                    <h5 class="clearfix">
+                        <strong class="fl clearfix">
+                            <em class="fl"></em>
+                            <a href="###" class="fl">少儿</a>
+                        </strong>
+                        <span class="fl">
+                            <a href="###">更多&gt;</a>
+                        </span>
+                    </h5>
+                    <div class="se-con clearfix">
+                        <ul class="fl clearfix">
+                            <li class="special1">
+                                <a href="###"><img src="img/9_109.jpg" /></a>
+                                <a href="###"><p>小花仙 第2季</p></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="img/9_116.jpg" /></a>
+                                <a href="###"><p>新大头儿子和小头爸爸</p></a>
+                            </li>
+                        </ul>                
+                    </div>
+                </div>
+                <div class="jy-wrap fl">
+                    <h5 class="clearfix">
+                        <strong class="fl clearfix">
+                            <em class="fl"></em>
+                            <a href="###" class="fl">教育</a>
+                        </strong>
+                        <span class="fl">
+                            <a href="###">更多&gt;</a>
+                        </span>                   
+                    </h5>
+                    <div class="jy-con clearfix">
+                        <ul class="fl clearfix">
+                            <li class="special1">
+                                <a href="###"><img src="img/9_110.jpg" /></a>
+                                <a href="###"><p>咕力咕力</p></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="img/9_117.jpg" /></a>
+                                <a href="###"><p>幼儿启蒙专区</p></a>
+                            </li>
+                        </ul>                
+                    </div>
+                </div>                
+            </div>
+            <!--动漫 少儿 教育 end-->
+            <div class="tyyyss">
+            	<div class="ty-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">体育</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                                        <p class="fl clearfix">
+                                                <a href="###" class="one">足球</a>
+                                                <a href="###" class="two">篮球</a>
+                                                <a href="###" class="three">美网</a>
+                                                <a href="###" class="four">昆仑决</a>
+                                       </p>
+                            </h5>
+                            <div class="ty-con clearfix">
+                                <ul class="fl clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/10_122.jpg" /></a>
+                                        <a href="###"><p>双11苏宁买舜天战恒大淘宝</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="###"><img src="img/10_129.jpg" /></a>
+                                        <a href="###"><p>C罗3分钟自拍105张</p></a>
+                                    </li>
+                                </ul>   
+                                <ul class="fr clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/10_124.jpg" /></a>
+                                        <a href="###"><p>2015中超颁奖典礼回放</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="###"><img src="img/10_130.jpg" /></a>
+                                        <a href="###"><p>俄：兴奋剂指控毫无根据</p></a>
+                                    </li>
+                                </ul>                
+                            </div>
+                </div>         
+            	<div class="yy-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">音乐</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                                        <p class="fl clearfix">
+                                                <a href="###" class="one">爱奇艺音乐榜</a>
+                                       </p>
+                            </h5>
+                            <div class="yy-con clearfix">
+                                <ul class="fl clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/v_109310223_m_601_180_236.jpg" /></a>
+                                        <a href="###"><p>鹿晗-诺言 正式版</p></a>
+                                    </li>                                 
+                                </ul>   
+                                <ul class="fr clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/10_125.jpg" /></a>
+                                        <a href="###"><p>Bang My Head</p></a>
+                                    </li>
+                                    <li>
+                                        <a href="###"><img src="img/10_131.jpg" /></a>
+                                        <a href="###"><p>田馥甄-小幸运</p></a>
+                                    </li>
+                                </ul>                
+                            </div>
+                </div>         
+                <div class="ss-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">时尚</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                            </h5>
+                            <div class="ss-con clearfix">
+                                <ul class="fl clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/2_22.jpg" /></a>
+                                        <a href="###"><p>中国双姝聚首维秘大秀后台</p></a>
+                                    </li>                                 
+                                </ul>                                                 
+                            </div>
+                </div>                         
+            </div>
+            <!--体育 音乐 时尚 end-->
+            <div class="myshjk">
+            	<div class="my-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">母婴</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                                        <p class="fl clearfix">
+                                                <a href="###" class="one">孕期</a>
+                                                <a href="###" class="two">分娩时刻</a>
+                                                <a href="###" class="three">早教课堂</a>
+                                       </p>
+                            </h5>
+                            <div class="my-con clearfix">
+                                <ul class="fl clearfix">                                    
+                                    <li>
+                                        <a href="###"><img src="img/11_135.jpg" /></a>
+                                        <a href="###"><p>人工喂养每餐吃多少奶最好</p></a>
+                                    </li>
+                                </ul>   
+                                <ul class="fr clearfix">
+                                    <li>
+                                        <a href="###"><img src="img/11_136.jpg" /></a>
+                                        <a href="###"><p>挑选纸尿裤全攻略</p></a>
+                                    </li>
+                                </ul>                
+                            </div>
+                </div>         
+            	<div class="sh-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">生活</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                                        <p class="fl clearfix">
+                                                <a href="###" class="one">悦活汇</a>
+                                                <a href="###" class="two">美食专区</a>
+                                                <a href="###" class="three">健身季</a>
+                                       </p>
+                            </h5>
+                            <div class="sh-con clearfix">
+                                <ul class="fl clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/11_137.jpg" /></a>
+                                        <a href="###"><p>红酒当酱油 才是好厨师</p></a>
+                                    </li>                                 
+                                </ul>   
+                                <ul class="fr clearfix">
+                                    <li>
+                                        <a href="###"><img src="img/11_138.jpg" /></a>
+                                        <a href="###"><p>靖王王凯演绎男友力MAX</p></a>
+                                    </li>
+                                </ul>                
+                            </div>
+                </div>         
+                <div class="jk-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">健康</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                            </h5>
+                            <div class="jk-con clearfix">
+                                <ul class="fl clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/11_139.jpg" /></a>
+                                        <a href="###"><p>这些行为也是性骚扰</p></a>
+                                    </li>                                 
+                                </ul>                                                 
+                            </div>
+                </div>                         
+            </div>
+            <!--母婴 生活 健康 end-->
+            <div class="kjqccj">
+            	<div class="kj-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">科技</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                                        <p class="fl clearfix">
+                                                <a href="###" class="one">极客说</a>
+                                                <a href="###" class="two">前沿技术</a>
+                                                <a href="###" class="three">风云榜</a>
+                                       </p>
+                            </h5>
+                            <div class="kj-con clearfix">
+                                <ul class="fl clearfix">                                    
+                                    <li>
+                                        <a href="###"><img src="img/11_145.jpg" /></a>
+                                        <a href="###"><p>电子竞技，是游戏也是生意</p></a>
+                                    </li>
+                                </ul>   
+                                <ul class="fr clearfix">
+                                    <li>
+                                        <a href="###"><img src="img/11_146.jpg" /></a>
+                                        <a href="###"><p>雅马哈研制出可飙车机器人</p></a>
+                                    </li>
+                                </ul>                
+                            </div>
+                </div>         
+            	<div class="qc-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">汽车</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                                        <p class="fl clearfix">
+                                                <a href="###" class="one">保时捷Macan GTS/a>
+                                                <a href="###" class="three">奥迪S8</a>
+                                       </p>
+                            </h5>
+                            <div class="qc-con clearfix">
+                                <ul class="fl clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/11_147.jpg" /></a>
+                                        <a href="###"><p>路虎发现神行中期改款</p></a>
+                                    </li>                                 
+                                </ul>   
+                                <ul class="fr clearfix">
+                                    <li>
+                                        <a href="###"><img src="img/11_148.jpg" /></a>
+                                        <a href="###"><p>法拉利 F12 TDF 官方视频</p></a>
+                                    </li>
+                                </ul>                
+                            </div>
+                </div>         
+                <div class="cj-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">财经</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                            </h5>
+                            <div class="cj-con clearfix">
+                                <ul class="fl clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/11_149.jpg" /></a>
+                                        <a href="###"><p>三个最烂行业的逆袭者</p></a>
+                                    </li>                                 
+                                </ul>                                                 
+                            </div>
+                </div>                         
+            </div>
+            <!--科技 汽车 财经 end-->
+            <div class="lyjljs">
+            	<div class="ly-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">旅游</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                                        <p class="fl clearfix">
+                                                <a href="###" class="one">翻滚吧地球</a>
+                                                <a href="###" class="three">XFUN吃货俱乐部</a>
+                                       </p>
+                            </h5>
+                            <div class="ly-con clearfix">
+                                <ul class="fl clearfix">                                    
+                                    <li>
+                                        <a href="###"><img src="img/11_155.jpg" /></a>
+                                        <a href="###"><p>巴黎地下藏石洞 胆小勿入</p></a>
+                                    </li>
+                                </ul>   
+                                <ul class="fr clearfix">
+                                    <li>
+                                        <a href="###"><img src="img/11_156.jpg" /></a>
+                                        <a href="###"><p>探索即将灭绝的日本忍者</p></a>
+                                    </li>
+                                </ul>                
+                            </div>
+                </div>         
+            	<div class="jl-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">纪录片</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                                        <p class="fl clearfix">
+                                                <a href="###" class="one">VIP精选</a>
+                                                <a href="###" class="two">天罚</a>
+                                                <a href="###" class="three">热记录</a>
+                                       </p>
+                            </h5>
+                            <div class="jl-con clearfix">
+                                <ul class="fl clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/11_158.jpg" /></a>
+                                        <a href="###"><p>BBC：地球脉动-未来</p></a>
+                                    </li>                                 
+                                </ul>   
+                                <ul class="fr clearfix">
+                                    <li>
+                                        <a href="###"><img src="img/11_159.jpg" /></a>
+                                        <a href="###"><p>城会玩！身体吸住大理石</p></a>
+                                    </li>
+                                </ul>                
+                            </div>
+                </div>         
+                <div class="js-wrap fl">
+                            <h5 class="clearfix">
+                                        <strong class="fl clearfix">
+                                            <em class="fl"></em>
+                                            <a href="###" class="fl">军事</a>
+                                        </strong>
+                                        <span class="fl">
+                                            <a href="###">更多&gt;</a>
+                                        </span>
+                            </h5>
+                            <div class="js-con clearfix">
+                                <ul class="fl clearfix">
+                                    <li class="special1">
+                                        <a href="###"><img src="img/11_160.jpg" /></a>
+                                        <a href="###"><p>UFO引发半个美国恐慌</p></a>
+                                    </li>                                 
+                                </ul>                                                 
+                            </div>
+                </div>                         
+            </div>
+            <!--旅游 纪录片 军事 end-->            
+      <div class="yc-wrap clearfix">
+    	<div class="box1 fl">
+        	<h5 class="clearfix">
+            	<strong class="fl clearfix">
+                    <em class="fl"></em>
+                    <a href="###" class="fl">原创</a>
+                </strong>
+                <span class="fl">
+                	<a href="###">更多&gt;</a>
+                </span>
+                <p class="fl clearfix">
+                    <a href="###" class="one">原创热点</a>
+                    <a href="###" class="two">新锐动画</a>
+                    <a href="###" class="three">网络剧</a>
+                    <a href="###" class="three">每周热播</a>
+                    <a href="###" class="three">爱侃</a>
+                    <a href="###" class="four">禽兽超人</a>
+                </p>                
+            </h5>
+            <div class="box1-con clearfix">
+            	<div class="fl">
+                	<a href="###"><img src="img/11_166.jpg" /></a>
+                    <a href="###"><p>《囧胸槑弟》看完就剁手！双十一破产指南<br />
+                    <i>卜钰生日很悲催的收到一根相机带，然后受好友怂恿开始为相机带...</i></p></a>
+                </div>
+                <ul class="fl clearfix">
+                	<li class="special1">
+                        <a href="###"><img src="img/11_167.jpg" /></a>
+                        <a href="###"><p>中韩模特夫妇教你秀恩爱<br />
+                        <i>叮咚妹你好</i></p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/11_171.jpg" /></a>
+                        <a href="###"><p>光棍节你打算怎么过？<br />
+                        <i>星座TV</i>></p></a>
+                    </li>
+                </ul>
+                <ul class="fr clearfix">
+                    <li class="special1">
+                        <a href="###"><img src="img/11_168.jpg" /></a>
+                       <a href="###"> <p>逗比银幕情侣打啵超娇羞<br />
+                       <i>淘梦网</i></p></a>
+                    </li>
+                    <li>
+                        <a href="###"><img src="img/11_172.jpg" /></a>
+                        <a href="###"><p>叶璇真的被下降头了？<br />
+                       <i>飞碟说</i></p></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        	<div class="box1-r fr">
+             	<h5 class="clearfix">
+                    <strong class="fl clearfix">
+                        <em class="fl"></em>
+                        <a href="###" class="fl">原创达人</a>
+                    </strong>
+                    <span class="fl">
+                        <a href="###">更多&gt;</a>
+                    </span>
+                </h5>                
+                <ul>
+                	<li class="clearfix">
+                    	<a href="###" class="fl"><img src="img/12_03.jpg" /></a>
+                        <div class="dy fl">
+                        	<a href="###"><i>点星人视频</i></a>
+                        	<a href="###"><p>2,595人订阅</p></a>
+                            <a href="###"><em>+订阅</em></a>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="###" class="fl"><img src="img/12_06.jpg" /></a>
+                        <div class="dy fl">
+                        	<a href="###"><i>黄豆包儿</i></a>
+                        	<a href="###"><p>111人订阅</p></a>
+                            <a href="###"><em>+订阅</em></a>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="###" class="fl"><img src="img/12_08.jpg" /></a>
+                        <div class="dy fl">
+                        	<a href="###"><i>女神TV</i></a>
+                        	<a href="###"><p>2,056人订阅</p></a>
+                            <a href="###"><em>+订阅</em></a>
+                        </div>
+                    </li>
+                    <li class="clearfix">
+                    	<a href="###" class="fl"><img src="img/12_10.jpg" /></a>
+                        <div class="dy fl">
+                        	<a href="###"><i>明白学堂官方</i></a>
+                        	<a href="###"><p>7,047人订阅</p></a>
+                            <a href="###"><em>+订阅</em></a>
+                        </div>
+                    </li>
+                </ul>
+             </div>
+    </div>
+    <!--原创end -->
+    <div class="gxpk clearfix">
+                <div class="gx fl">
+                    <h5 class="clearfix">
+                        <strong class="fl">
+                            <a href="###">搞笑</a>
+                        </strong>
+                        <span class="fl">
+                            <a href="###">更多&gt;</a>
+                        </span>
+                        <p class="fl clearfix">
+                            <a href="###" class="one">欢乐精选</a>
+                            <a href="###" class="one">雷人囧事</a>
+                            <a href="###" class="two">笑霸来了</a>
+                        </p>                
+                    </h5>
+                    <ul class=" gx-con clearfix">
+                        <li class="fl">
+                            <a href="###"><img src="img/11_176.jpg" /></a>
+                            <a href="###"><p>情侣花式作死逼疯单身汪</p></a>
+                        </li>
+                        <li class="second fl">
+                            <a href="###"><img src="img/11_178.jpg" /></a>
+                            <a href="###"><p>逗比尔康玩命血战双11</p></a>
+                        </li>
+                        <li class="fl">
+                            <a href="###"><img src="img/11_179.jpg" /></a>
+                            <a href="###"><p>虐哭！单身美女比惨大赛</p></a>
+                        </li>                
+                    </ul>
+                </div>
+                <div class="pk fl">
+                    <h5 class="clearfix">
+                        <strong class="fl">
+                            <a href="###">拍客</a>
+                        </strong>
+                        <span class="fl">
+                            <a href="###">更多&gt;</a>
+                        </span>
+                        <p class="fl clearfix">
+                            <a href="###" class="one">粉丝频道</a>
+                            <a href="###" class="one">奇嘴八舌</a>
+                            <a href="###" class="two">饭点爽谈</a>
+                        </p>                
+                    </h5>
+                    <ul class="pk-con clearfix">
+                        <li class="fl">
+                            <a href="###"><img src="img/11_180.jpg" /></a>
+                            <a href="###"><p>狂野小妮儿教你做性感果汁</p></a>
+                        </li>
+                        <li class="last fl">
+                            <a href="###"><img src="img/11_181.jpg" /></a>
+                            <a href="###"><p>调堡！日本消防员逆天比赛</p></a>
+                        </li>                                     
+                    </ul>
+                </div>                
+            </div>
+            <!--搞笑 拍客 end-->
+            <div class="yxpps clearfix">
+                <div class="yx fl">
+                    <h5 class="clearfix">
+                        <strong class="fl">
+                        	<em class="fl"></em>
+                            <a href="###" class="fl">游戏</a>
+                        </strong>
+                        <span class="fl">
+                            <a href="###">更多&gt;</a>
+                        </span>
+                        <p class="fl clearfix">
+                            <a href="###" class="one">我的世界</a>
+                            <a href="###" class="one">史丹利快报</a>
+                            <a href="###" class="one">天策最脏教学</a>
+                            <a href="###" class="two">秀你一脸</a>
+                        </p>                
+                    </h5>
+                    <ul class=" yx-con clearfix">
+                        <li class="fl">
+                            <a href="###"><img src="img/11_187.jpg" /></a>
+                            <a href="###"><p>阿津【恶梦之屋】第4集...<br />
+                       		<i>阿津实况</i></p></a>
+                        </li>
+                        <li class="second fl">
+                            <a href="###"><img src="img/11_188.jpg" /></a>
+                            <a href="###"><p>硬汉阿雷求生之路2欢乐...<br />
+                       		<i>硬汉阿雷</i></p></a>
+                        </li>
+                        <li class="fl">
+                            <a href="###"><img src="img/11_189.jpg" /></a>
+                            <a href="###"><p>那个叫自来也的男人死了<br />
+                       		<i>NEO牛男</i></p></a>
+                        </li>                
+                    </ul>
+                </div>
+                <div class="pps fl">
+                    <h5 class="clearfix">
+                        <strong class="fl">
+                        	<em class="fl"></em>
+                            <a href="###" class="fl">PPS奇秀</a>
+                        </strong>
+                        <span class="fl">
+                            <a href="###">零距离互动&gt;</a>
+                        </span>
+                        <p class="fl clearfix">
+                            <a href="###" class="one">奇秀新星</a>
+                            <a href="###" class="two">美女</a>
+                        </p>                
+                    </h5>
+                    <ul class="pps-con clearfix">
+                        <li class="fl">
+                            <a href="###"><img src="img/11_190.jpg" /></a>
+                            <a href="###"><p>央央&hearts;长乐未央</p></a>
+                        </li>
+                        <li class="last fl">
+                            <a href="###"><img src="img/11_191.jpg" /></a>
+                            <a href="###"><p>吃土少女求抱抱-西瓜</p></a>
+                        </li>                                     
+                    </ul>
+                </div>                
+            </div>
+            <!--游戏 pps奇秀 end-->
+            <ul class="link clearfix">
+            	<li><a href="###"><img src="img/4-1.jpg" /></a></li>
+                <li><a href="###"><img src="img/4-1.jpg" /></a></li>
+                <li><a href="###"><img src="img/4-1.jpg" /></a></li>
+                <li><a href="###"><img src="img/4-1.jpg" /></a></li>
+                <li class="last"><a href="###"><img src="img/4-1.jpg" /></a></li>
+            </ul>
+            <div class="banner-2"><img src="img/banner-2.jpg" /></div>
+<dl class="footer clearfix">
+            		<dd class="fl">
+                    		<h2><a href="###">合作伙伴</a><span><a href="###">更多&gt;</a></span></h2>
+                            <ul class="one fl">
+                            	<li><a href="###">万达电影网</a></li>
+                                <li><a href="###">华策影视</a></li>
+                                <li><a href="###">百度V计划</a></li>
+                                <li><a href="###">智能电视网</a></li>
+                            </ul>
+                            <ul class="two fl">
+                            	<li><a href="###">华谊兄弟</a></li>
+                                <li><a href="###">百老汇</a></li>
+                                <li><a href="###">央广视讯</a></li>
+                            </ul>
+                            <ul class="three fl">
+                            	<li> <a href="###">星美</a></li>
+                                <li><a href="###">百度视频</a></li>
+                                <li><a href="###">华录百纳</a></li>
+                            </ul>                            
+                            <ul class="four fl">
+                            	<li><a href="###">光线影业</a></li>
+                                <li> <a href="###">百度百科</a></li>
+                                <li><a href="###">百度贴吧</a></li>
+                            </ul>
+                            <ul class="five fl">
+                            	<li><a href="###">电影网</a></li>
+                                <li><a href="###">hao123</a></li>
+                                <li><a href="###">爱奇艺天猫店</a></li>
+                            </ul>                           
+                    </dd>
+                    <dd class="second fl">
+                    		<h2><a href="###">爱奇艺动态</a><span><a href="###">更多&gt;</a></span></h2>
+                            <ul class="six fl">
+                            	<li><a href="###">爱奇艺影业与China 3D战略合作</a></li>
+                                <li><a href="###">爱奇艺与NBC环球达成版权合作</a></li>
+                                <li><a href="###">《蜀山战纪》上线爱奇艺VIP会员</a></li>                                
+                            </ul>
+                            <ul class="seven fl">
+                            	<li><a href="###">爱奇艺发布音频水印技术</a></li>
+                                <li><a href="###">爱奇艺获网络节目评选21项大奖</a></li>
+                                <li><a href="###">爱奇艺公布30+超级网剧计划</a></li>
+                            </ul>
+                    </dd>
+            </dl>
+            <div class="footer-last">
+            	<div class="bottomnav clearfix">
+                	<a href="###">公司介绍</a>
+                    <a href="###">新闻动态</a>
+                    <a href="###">联系方式</a>
+                    <a href="###">招聘英才</a>
+                    <a href="###" class="spe1">爱奇艺实验室</a>
+                    <a href="###">开放平台</a>
+                    <a href="###">应用商店</a>
+                    <a href="###" class="spe3">爱奇艺论坛</a>
+                    <a href="###" class="spe3">帮助与反馈</a>
+                    <a href="###">侵权投诉</a>
+                    <a href="###" class="spe2">About Us</a>
+                </div>
+                <div class="jubao clearfix">
+                	<a href="###" class="fl">违法和不良信息举报电话：400-800-7171</a>
+                    <a href="###" class="fr">举报邮箱：jubao365@qiyi.com</a>
+                </div>
+                <div class="zhengjian clearfix">
+                	<a href="###">京网文[2015]0652-282号</a>
+                    <a href="###">中国互联网诚信联盟</a>
+                    <a href="###">互联网违法和不良信息举报中心</a>
+                    <a href="###">信息网络传播视听节目许可证 0110544号</a>
+                    <a href="###">广播电视节目制作经营许可证（京）字第1938号</a>
+                    <a href="###">京ICP证110636号</a>
+                    <a href="###">经营性网站备案信息 京公网安备 11010802010263号</a>
+                    <a href="###">增值电信业务经营许可证 B2-20120273</a>
+                    <a href="###">互联网药品信息服务资格证书（京）-经营性-2013-0012</a>
+                    <a href="###">出版物经营许可证</a>
+                </div>
+                <div class="copyright clearfix">
+                	<a href="###">Copyright@2015 爱奇艺 All Rights Reserved</a>
+                </div>
+            </div>
+</body>
+</html>

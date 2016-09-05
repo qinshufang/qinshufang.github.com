@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 设置浏览器宽度为 设备宽度
+		初始化比例
+	-->
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=0" >
+    <meta name="apple-mobile-web-app-capable" content="yes">  <!--是否允许用户保存网页到桌面-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">  <!--统一样式 导航条-->
+    <script>
+        //封闭空间
+        (function(win,doc){
+            //获取html
+            var d=doc.documentElement;
+            //给html设置 字体大小
+            function change(){
+                //屏幕的宽度*20/320
+                d.style.fontSize=d.clientWidth/16+'px';
+            };
+            //给window绑定一个事件
+            //窗口缩放
+            win.addEventListener('resize',change,false);
+            change();
+        })(window,document)
+    </script>
+    <title>qsf</title>
+    <style>
+        * {  margin: 0;  padding: 0; list-style: none; }
+        a{text-decoration: none;}
+        i,em{  font-style:normal;  }
+        h1,h2,h3,h4,h5,h6,b,strong{  font-weight:normal;  }
+        .clearfix:after{  content:"";  display:block;  clear:both;  }
+        .clearfix{zoom:1;}
+        .fl{  float:left;  }
+        .fr{  float:right;  }
+        img{  vertical-align: top;  }
+        input,img,a{  border:none;  }
+        input{  outline: none;  }
+        html,body{  font-size: 20px;  }
+
+        header{width:16rem; height: 2.55rem;background: #f4f4f4; overflow: hidden;  }
+        header div{ float:left; width: 3.075rem; height:1.425rem; background: url("imges/btn.png") no-repeat; margin: 0.5rem; background-size: 100%;}
+        header h1{float:left; text-indent: -999em; width:3.675rem; height:0.975rem; background: url("imges/logo.png") no-repeat; margin-top: 0.825rem; margin-left: 2.55rem; background-size: 100%;  }
+
+        section{width:16rem; height: 7.525rem; overflow: hidden;}  /*宽500%所以加overflow: hidden*/
+        section ul{width:500%; height: 6.7rem; overflow: hidden; }     /*清浮动*/
+        section ul li{float: left; width:16rem; height: 6.7rem;   )}
+        section ul li img{width:16rem; height: 6.7rem;background-size: 100%;}  /*此处img一定要写宽高*/
+
+        section>div{ width:16rem; height: 0.825rem;
+            display:-webkit-box; -webkit-box-pack:center;  /*让子级水平居中*/
+            -webkit-box-align:end;                           /*让子级垂直居下*/
+        }
+        section>div>div>span{width: 0.25rem; height: 0.25rem; background: #e74c3c; border-radius: 50%;  float: left; margin-left: 0.25rem;}
+
+        /*导航图标*/
+        .nav{width:16rem; /*height: 8.075rem;*/}
+        .nav ul{overflow: hidden;width:16rem; }
+        .nav li{float:left; }
+        .nav li .pho{ display:block; width: 2rem; height: 2rem;  margin-top: 1em;}
+        .nav li .pho img{ width: 2rem; height: 2rem; background-size: 100%;}
+        .nav li .txt{position:relative;display:block; font-size: 0.575rem; color: #999; margin-top: 0.5rem; text-align: center; font-family: 'microsoft-yahei';}
+         /*小红点伪类写法*/
+        .nav li .txt.active:after{
+            content: ''; position: absolute; top: 0.2rem; left: 0; width: 0.25rem; height: 0.25rem; border-radius: 50%; background: red;
+        }
+
+        .hot{  margin: 1.55rem auto 0.55rem; padding-bottom: 0.55rem; width:15rem; height: 0.75rem; border-bottom:0.125rem solid #dcdcdc; }
+        .hot span{font-size: 0.7rem; font-family: '黑体'; }
+        .hot .left{ border-left:0.125rem solid #d51938; padding-left:0.5rem;}
+        .hot .right{  padding-left: 7.175rem;   }
+
+        .content .con{position: relative; width:16rem; height: 3rem; margin-left: 0.15rem; margin-right:0.15rem;margin-bottom: 0.5rem;   }
+        .content .con .left{width: 1.5rem;height: 3rem; line-height: 3rem; text-align: center; }
+        .content .con img{width:4.5rem; height: 3rem; background-size:100%;}
+        .content .con .right{width: 8.5rem; height: 3rem; background: #f4f4f4;  padding-left: 0.575rem; font-weight: bold; }
+        .content .con .right p{font-size: 0.6rem; color: #999; padding-top: 0.7rem; }
+        .content .con .right span{font-size: 0.6rem; color: #999; }
+        .content .con .right span.s1{text-decoration: line-through;}
+        .content .con .right h2{position:absolute; top:1.05rem; right:2rem; color: #d51938; font-size: 0.7rem;  }
+        .content .con .right h2 i{ position:absolute; right: -0.5rem;; top:0.05rem; width:0.45rem; height: 0.7rem; background: url("imges/btn1.png") no-repeat; background-size: 100%;}
+        .content .con1{margin-top: 0.75rem;}
+
+        p.bar{width: 15rem; height: 2rem; background: #f5f5f5; margin: 0.5rem 0.875rem 0.5rem 0.15rem; line-height:2rem; text-align: center; font-size: 0.7rem; color: #b2b2b2;}
+
+        .tuan div{float: left; height: 8.8rem;}
+        .tuan .left{width: 3.75rem; background: url("imges/tuan1.png") no-repeat; background-size:3.75rem 8.8rem;}
+        .tuan .left2{width: 3.75rem; background: url("imges/tuan2.png") no-repeat; background-size:3.75rem 8.8rem;}
+        .tuan .left3{width: 3.75rem; background: url("imges/tuan3.png") no-repeat; background-size:3.75rem 8.8rem;}
+        .tuan .right{  width:11.25rem;  }
+        .tuan .right a{  float: left; width: calc((100% / 3) - 1px); height: calc(25% - 1px); border: 1px solid #ccc;text-decoration: none;
+                        text-align:center; line-height: 2.2rem; color: #ccc; font-size: 0.8rem;  margin:-1px 0 0 -1px;font-family: 'microsoft-yahei';
+                         } /*切记 运算符两侧写空格*/
+        .tuan .right a.on{color:#db164b; }
+
+        .photo{width: 16rem; height:4rem; margin: 0.5rem auto;  }
+        .photo img{float: left; width: 5rem; height: 4rem; background-size: 100%; }
+
+        .login{width: 15.6rem; height: 2.2rem; background: #f8f8f8;}
+        .login div{ font-size: 0.65rem ; font-weight: bold; font-family: 'microsoft-yahei'; line-height: 2.2rem;}
+        .login .left{padding-left: 0.5rem;}
+        .login .right{padding-right: 1.625rem;}
+
+        .ip{width: 15.6rem; height: 3.675rem; background: #eee; display:-webkit-box; -webkit-box-orient:vertical; -webkit-box-align:center;
+            -webkit-box-pack:center;
+        }
+        .ip span,.ip p{font-weight: bold; font-family: 'microsoft-yahei';padding-bottom: 0.5rem; }
+        .ip span{color: #999 ;}
+
+        .bot{width: 14.46rem; height: 5.4rem;background: #eee; padding-left: 1.125rem; }
+        .bot img{  width: 13rem; height: 4.425rem; background-size: 100%; }
+    </style>
+
+</head>
+<body>
+     <header>
+         <div></div>
+         <h1>logo</h1>
+     </header>
+    <section>
+        <ul>
+            <li><a href="javascript:;"><img src="imges/banner1.png"></a></li>
+            <li><a href="javascript:;"><img src="imges/banner1.png"></a></li>
+            <li><a href="javascript:;"><img src="imges/banner1.png"></a></li>
+            <li><a href="javascript:;"><img src="imges/banner1.png"></a></li>
+            <li><a href="javascript:;"><img src="imges/banner1.png"></a></li>
+        </ul>
+        <div>
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+     <!-- 导航图标-->
+    <div class="nav">
+        <ul>
+            <li style="margin-right: 1.75rem; margin-left: 1.325rem;" >
+                <a href="javascript:;" class="pho"><img src="imges/tu1.png"  alt=""></a>
+                <a href="javascript:;" class="txt active">商品 </a>
+            </li>
+            <li style="margin-right: 1.75rem;">
+                <a href="javascript:;" class="pho"><img src="imges/tu2.png"  alt=""></a>
+                <a href="javascript:;" class="txt active">生活</a>
+            </li>
+            <li style="margin-right: 1.75rem;">
+                <a href="javascript:;" class="pho"><img src="imges/tu3.png"  alt=""></a>
+                <a href="javascript:;" class="txt">品牌 </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="pho"><img src="imges/tu4.png"  alt=""></a>
+                <a href="javascript:;" class="txt">聚宝盆 </a>
+            </li>
+            <li style="margin-right: 1.75rem; margin-left: 1.325rem;">
+                <a href="javascript:;" class="pho"><img src="imges/tu5.png"  alt=""></a>
+                <a href="javascript:;" class="txt">聚名品 </a>
+            </li>
+            <li style="margin-right: 1.75rem;">
+                <a href="javascript:;" class="pho"><img src="imges/tu6.png"  alt=""></a>
+                <a href="javascript:;" class="txt">聚家族 </a>
+            </li>
+            <li style="margin-right: 1.75rem;">
+                <a href="javascript:;" class="pho"><img src="imges/tu7.png"  alt=""></a>
+                <a href="javascript:;" class="txt">聚透 </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="pho"><img src="imges/tu8.png"  alt=""></a>
+                <a href="javascript:;" class="txt">客户端 </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hot">
+        <span class="left">聚划算热卖排行</span>
+        <span class="right">TOP10</span>
+    </div>
+
+    <div class="content">
+        <div class="con  con1 clearfix">
+            <div class="left fl" style="background: #e00202">1</div>
+            <div class="center fl"><img src="imges/01.png" alt=""></div>
+            <div class="right fl">
+                <p>已售 68432</p>
+                <span><a href="javascript:;" style="color: red; font-weight: bold;">2.3</a>折</span>
+                <span class="s1">￥299</span>
+                <h2>￥51<i></i></h2>
+            </div>
+        </div>
+        <div class="con clearfix">
+            <div class="left fl" style="background: #ff4800">2</div>
+            <div class="center fl"><img src="imges/02.png" alt=""></div>
+            <div class="right fl">
+                <p>已售 68432</p>
+                <span><a href="javascript:;" style="color: red; font-weight: bold;">2.3</a>折</span>
+                <span class="s1">￥299</span>
+                <h2>￥56<i></i></h2>
+            </div>
+        </div>
+        <div class="con clearfix">
+            <div class="left fl" style="background: #ff7300">3</div>
+            <div class="center fl"><img src="imges/03.png" alt=""></div>
+            <div class="right fl">
+                <p>已售 68432</p>
+                <span><a href="javascript:;" style="color: red; font-weight: bold;">2.3</a>折</span>
+                <span class="s1">￥539</span>
+                <h2>￥131<i></i></h2>
+            </div>
+        </div>
+        <div class="con clearfix">
+            <div class="left fl" style="background: #ff9d00">4</div>
+            <div class="center fl"><img src="imges/04.png" alt=""></div>
+            <div class="right fl">
+                <p>已售 68432</p>
+                <span><a href="javascript:;" style="color: red; font-weight: bold;">2.3</a>折</span>
+                <span class="s1">￥259</span>
+                <h2>￥205<i></i></h2>
+            </div>
+        </div>
+        <div class="con clearfix">
+            <div class="left fl" style="background: #ffa800">5</div>
+            <div class="center fl"><img src="imges/05.png" alt=""></div>
+            <div class="right fl">
+                <p>已售 68432</p>
+                <span><a href="javascript:;" style="color: red; font-weight: bold;">2.3</a>折</span>
+                <span class="s1">￥4599</span>
+                <h2>￥4561<i></i></h2>
+            </div>
+        </div>
+        <div class="con clearfix">
+            <div class="left fl" style="background: #ffb400">6</div>
+            <div class="center fl"><img src="imges/06.png" alt=""></div>
+            <div class="right fl">
+                <p>已售 68432</p>
+                <span><a href="javascript:;" style="color: red; font-weight: bold;">2.3</a>折</span>
+                <span class="s1">￥4599</span>
+                <h2>￥581<i></i></h2>
+            </div>
+        </div>
+        <div class="con clearfix">
+            <div class="left fl" style="background: #ffba00">7</div>
+            <div class="center fl"><img src="imges/07.png" alt=""></div>
+            <div class="right fl">
+                <p>已售 68432</p>
+                <span><a href="javascript:;" style="color: red; font-weight: bold;">2.3</a>折</span>
+                <span class="s1">￥4599</span>
+                <h2>￥651<i></i></h2>
+            </div>
+        </div>
+        <div class="con clearfix">
+            <div class="left fl" style="background: #ffa800">8</div>
+            <div class="center fl"><img src="imges/08.png" alt=""></div>
+            <div class="right fl">
+                <p>已售 68432</p>
+                <span><a href="javascript:;" style="color: red; font-weight: bold;">2.3</a>折</span>
+                <span class="s1">￥4599</span>
+                <h2>￥415<i></i></h2>
+            </div>
+        </div>
+        <div class="con clearfix">
+            <div class="left fl" style="background: #fcd000">9</div>
+            <div class="center fl"><img src="imges/09.png" alt=""></div>
+            <div class="right fl">
+                <p>已售 68432</p>
+                <span><a href="javascript:;" style="color: red; font-weight: bold;">2.3</a>折</span>
+                <span class="s1">￥4599</span>
+                <h2>￥567<i></i></h2>
+            </div>
+        </div>
+        <div class="con clearfix">
+            <div class="left fl" style="background: #ffe152">10</div>
+            <div class="center fl"><img src="imges/10.png" alt=""></div>
+            <div class="right fl">
+                <p>已售 68432</p>
+                <span><a href="javascript:;" style="color: red; font-weight: bold;">2.3</a>折</span>
+                <span class="s1">￥4599</span>
+                <h2>9<i></i></h2>
+            </div>
+        </div>
+    </div>
+
+     <p class="bar">更多划算逛起来！</p>
+
+     <!--团购-->
+    <div class="tuan clearfix">
+            <div class="left"></div>
+            <div class="right">
+                <a href="javascript:;">服饰</a>
+                <a class="on" href="javascript:;">配饰</a>
+                <a href="javascript:;">美妆</a>
+                <a href="javascript:;">鞋包</a>
+                <a href="javascript:;">食品</a>
+                <a class="on" href="javascript:;">家居</a>
+                <a href="javascript:;">运动</a>
+                <a class="on" href="javascript:;">电器</a>
+                <a href="javascript:;">百货</a>
+                <a href="javascript:;">母婴</a>
+                <a href="javascript:;">数码</a>
+                <a href="javascript:;">更多</a>
+            </div>
+    </div>
+     <p class="bar">精彩商品 逛起来！</p>
+
+     <div class="tuan clearfix">
+         <div class=" left2"></div>
+         <div class="right">
+             <a href="javascript:;">服饰</a>
+             <a  href="javascript:;">教育</a>
+             <a href="javascript:;">酒店</a>
+             <a href="javascript:;">电影</a>
+             <a href="javascript:;">生活服务</a>
+             <a class="on" href="javascript:;">卡券</a>
+             <a href="javascript:;">摄影</a>
+             <a class="on" href="javascript:;">粮油生鲜</a>
+             <a href="javascript:;">百货</a>
+             <a class="on" href="javascript:;">休闲娱乐</a>
+             <a href="javascript:;">更多</a>
+             <a href="javascript:;"></a>
+         </div>
+     </div>
+     <p class="bar">品质生活 逛起来！</p>
+     <div class="tuan clearfix">
+         <div class=" left3"></div>
+         <div class="right">
+             <a href="javascript:;">七匹狼</a>
+             <a class="on" href="javascript:;">粉红女...</a>
+             <a href="javascript:;">卓诗尼</a>
+             <a href="javascript:;">收纳博士</a>
+             <a href="javascript:;">惠氏</a>
+             <a class="on" href="javascript:;">夏乐</a>
+             <a href="javascript:;">帕克伦</a>
+             <a class="on" href="javascript:;">古今</a>
+             <a href="javascript:;">九牧</a>
+             <a href="javascript:;">诺澳</a>
+             <a href="javascript:;">红豆</a>
+             <a href="javascript:;">曼秀雷敦</a>
+         </div>
+     </div>
+     <p class="bar">品质折扣 逛起来！</p>
+
+    <div class="photo clearfix">
+        <img src="imges/s1.png" alt="">
+        <img src="imges/s2.png" alt="">
+        <img src="imges/s3.png" alt="">
+    </div>
+
+    <div class="login clearfix">
+        <div class="left fl">登陆&nbsp;&nbsp;注册</div>
+        <div class="right fr">TOP</div>
+    </div>
+
+    <div class="ip">
+        <p>标准版  电脑版</p>
+
+        <span>&copy;2013 浙B2-20080224 服务中心</span>
+
+    </div>
+     <div class="bot">
+         <img src="imges/bot.png" alt="">
+     </div>
+
+
+</body>
+</html>

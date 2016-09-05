@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background:#00AA88;
+        }
+        #box{
+            width:500px;
+            height:500px;
+            border:5px dotted #fff;
+            margin:50px auto;
+            border-radius:50%;
+            position:relative;
+        }
+        span{
+            width:100px;
+            height:100px;
+            background: #f1afc1;
+            border-radius:50%;
+            position:absolute;
+            left:50%;
+            margin-left:-50px;
+            top:0;
+            margin-top:-50px;
+        }
+    </style>
+    <script src="jquery-1.7.2.js"></script>
+    <script>
+        $(function(){
+            var N=5;
+            var R=$('#box').outerWidth()/2;
+            for(var i=0;i<N;i++){
+                $('<span></span>').appendTo($('#box'));
+            }
+            var bFlag=true;
+            $(document).click(function(){
+                if(bFlag){
+                    for(var i=0;i<N;i++){
+                        var d=360/N*i;
+                        move($('span').eq(i),d);
+                    }
+                }else{
+                    for(var i=0;i<N;i++){
+                        var d=360/N*i;
+                        move($('span').eq(i),0);
+
+                    }
+                }
+                bFlag=!bFlag;
+            });
+
+
+            function move(obj,iTarget){
+                obj.attr('a',obj.attr('a') || 0);
+                var start=eval(obj.attr('a'));
+                var dis=iTarget-start;
+
+                var count=Math.floor(1000/30);
+                var n=0;
+                clearInterval(obj.attr('timer'));
+                obj.attr('timer',setInterval(function(){
+                    n++;
+                    var a=n/count;
+                    var cur=start+dis*a;
+                    obj.attr('a',cur);
+                    obj.css('left',R+Math.sin(cur*Math.PI/180)*R+'px');
+                    obj.css('top',R-Math.cos(cur*Math.PI/180)*R+'px');
+                    if(n==count){
+                        clearInterval(obj.attr('timer'));
+                    }
+                }, 30));
+            }
+
+        })
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

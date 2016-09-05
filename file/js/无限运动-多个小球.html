@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>qsf</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #div1{width: 50px; height: 50px; border-radius: 50%; background: #6699ff; position: absolute;left: 100px; top: 100px;}
+        #div2{width: 50px; height: 50px; border-radius: 50%; background:#46c832; position: absolute;left: 300px; top: 200px;}
+        #div3{width: 50px; height: 50px; border-radius: 50%; background:#e67e22; position: absolute;left: 500px; top: 300px;}
+        #div4{width: 50px; height: 50px; border-radius: 50%; background: #e690cf; position: absolute;left: 500px; top: 300px;}
+        #div5{width: 50px; height: 50px; border-radius: 50%; background: #e62324; position: absolute;left: 500px; top: 300px;}
+
+    </style>
+    <script src="move2.0.js"></script>
+    <script>
+        window.onload = function () {
+            var oDiv=document.getElementById('div1');
+            var oDiv2=document.getElementById('div2');
+            var oDiv3=document.getElementById('div3');
+            var oDiv4=document.getElementById('div4');
+            var oDiv5=document.getElementById('div5');
+
+            var arr=[
+                {left:100,top:100},
+                {left:800,top:100},
+                {left:150,top:300},
+                {left:200,top: 0},
+                {left:250,top:300}
+            ];
+            var arr2=[
+                {left:400,top:100},
+                {left:100,top:600},
+                {left:850,top:300},
+                {left:200,top:500},
+                {left:550,top:400}
+            ];
+            var arr3=[
+                {left:900,top:100},
+                {left:600,top:200},
+                {left:150,top:400},
+                {left:200,top: 70},
+                {left:450,top:600}
+            ];
+            var arr4=[
+                {left:900,top:100},
+                {left:700,top:600},
+                {left:250,top:300},
+                {left:200,top:300},
+                {left:550,top:900}
+            ];
+            var arr5=[
+                {left:900,top:100},
+                {left:600,top:600},
+                {left:450,top:400},
+                {left:100,top: 70},
+                {left:450,top:300}
+            ];
+            var now=1;
+            function next(){
+                move(oDiv,arr[now%5],{complete:function(){
+                    now++;
+                    next();
+                }});
+                move(oDiv2,arr2[now%5],{complete:function(){
+                    now++;
+                    next();
+                }});
+                move(oDiv3,arr3[now%5],{complete:function(){
+                    now++;
+                    next();
+                }});
+                move(oDiv4,arr4[now%5],{complete:function(){
+                    now++;
+                    next();
+                }});
+                move(oDiv5,arr5[now%5],{complete:function(){
+                    now++;
+                    next();
+                }});
+
+            }
+            next();
+        };
+    </script>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+
+</body>
+</html>

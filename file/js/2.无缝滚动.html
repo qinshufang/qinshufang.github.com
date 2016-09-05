@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        #box{
+            width:1280px;
+            height:480px;
+            border:2px solid #0aa770;
+            margin:20px auto;
+            position:relative;
+            overflow:hidden;
+        }
+        #left,#right{
+            width:60px;
+            height:40px;
+            background:#0aa770;
+            color:#fff;
+            font:bold 22px 'Microsoft YaHei';
+            outline:none;
+            border:none;
+            position:absolute;
+            left:50%;
+            bottom:10px;
+        }
+        #left{
+            margin-left:-60px;
+        }
+        #right{
+            margin-left:30px;
+        }
+        #box ul{
+            position:absolute;
+            left:0;
+            top:0;
+        }
+        #box ul li{
+            width:300px;
+            height:400px;
+            padding:10px;
+            float:left;
+        }
+        #box ul li img{
+            width:100%;
+        }
+    </style>
+    <script src="jquery-1.7.2.js"></script>
+    <script>
+        $(function(){
+            var oUl=$('ul');
+            var oLeft=$('#left');
+            var oRight=$('#right');
+
+            oUl.html(oUl.html()+oUl.html());
+            var oLi=$('li');
+            oUl.css('width',oLi.outerWidth()*oLi.length+'px');
+
+            var n=0;
+            var timer;
+            timer=setInterval(toLeft,30);
+
+            oLeft.click(function(){
+                clearInterval(timer);
+                timer=setInterval(toLeft,30);
+            });
+
+            oRight.click(function(){
+                clearInterval(timer);
+                timer=setInterval(toRight,30);
+            });
+            function toLeft(){
+                n-=3;
+                if(n<-oLi.eq(0).outerWidth()*oLi.length/2)n=0;
+                oUl.css('left',n);
+            }
+            function toRight(){
+                n+=3;
+                if(n>0)n=oLi.eq(0).outerWidth()*oLi.length/2;
+                oUl.css('left',n);
+            }
+        })
+    </script>
+</head>
+<body>
+    <div id="box">
+        <input type="button" value="left" id="left">
+        <input type="button" value="right" id="right">
+        <ul>
+            <li><img src="img/Ones01.jpg" /></li>
+            <li><img src="img/Ones02.jpg" /></li>
+            <li><img src="img/Ones03.jpg" /></li>
+            <li><img src="img/Ones04.jpg" /></li>
+        </ul>
+    </div>
+</body>
+</html>
